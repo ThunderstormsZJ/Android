@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.spinsoft.wdq.widget.RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <FrameLayout
+        android:id="@id/page_bottom_main"
+        style="@style/HomeNavigationStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="2.5dp"
+            android:drawableTop="@drawable/main_sel"
+            android:text="@string/page_bottom_main"
+            android:textColor="@color/video_navigation_textcolor_sel"
+            android:textSize="@dimen/text_size_22" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/VerticalDividerLineStyle"
+        android:background="#f7f8f9" />
+
+    <FrameLayout
+        android:id="@id/page_bottom_discover"
+        style="@style/HomeNavigationStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="2.5dp"
+            android:drawableTop="@drawable/discover_sel"
+            android:text="@string/page_bottom_discover"
+            android:textColor="@color/video_navigation_textcolor_sel"
+            android:textSize="@dimen/text_size_22" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/VerticalDividerLineStyle"
+        android:background="#f7f8f9" />
+
+    <FrameLayout
+        android:id="@id/page_bottom_personal"
+        style="@style/HomeNavigationStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="2.5dp"
+            android:drawableTop="@drawable/personal_sel"
+            android:text="@string/page_bottom_personal"
+            android:textColor="@color/video_navigation_textcolor_sel"
+            android:textSize="@dimen/text_size_22" />
+
+    </FrameLayout>
+
+</cn.spinsoft.wdq.widget.RadioGroup>

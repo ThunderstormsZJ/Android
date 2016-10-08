@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#f8f8f8" />
+
+    <TextView
+        android:id="@+id/login_divider"
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginTop="39dp" />
+
+    <LinearLayout
+        android:id="@+id/login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_divider"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@id/login_mobile"
+            style="@style/EditInputTextBigStyle"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_login_mobile"
+            android:drawablePadding="@dimen/text_drawable_padding_narrow"
+            android:hint="@string/login_mobile_hint"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/black"/>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_below="@id/login_mobile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@id/login_pwd"
+            style="@style/EditInputTextBigStyle"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_login_pwd"
+            android:drawablePadding="@dimen/text_drawable_padding_narrow"
+            android:hint="@string/login_pwd_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_below="@id/login_pwd" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/login_input"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/login_register_btn_sel"
+        android:enabled="false"
+        android:text="@string/login_login_str"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_36" />
+
+    <TextView
+        android:id="@id/login_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_login"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/text_action_bound_padding"
+        android:text="@string/login_forget_pwd"
+        android:textColor="@color/colorTextBlue"
+        android:textSize="@dimen/text_size_28" />
+
+    <Button
+        android:id="@id/login_wechat"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/ic_login_wechat" />
+
+    <Button
+        android:id="@id/login_qq"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/ic_login_qq" />
+</RelativeLayout>

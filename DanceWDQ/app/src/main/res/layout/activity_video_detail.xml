@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle">
+
+    <RelativeLayout
+        android:id="@+id/page_top_title"
+        style="@style/PageTitleRootStyle_Purple">
+        <TextView
+            android:id="@+id/video_detailInfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_back_white"
+            android:drawablePadding="4dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_32"
+            android:textColor="#fff"
+            android:text="@string/back_operation"/>
+
+        <TextView
+            android:id="@+id/video_detailInfo_title"
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="@string/videos_detaile_title"/>
+
+        <ImageView
+            android:id="@+id/video_detailInfo_more"
+            style="@style/PageTitleImgActionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/ic_item_more"/>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_below="@id/page_top_title" />
+
+
+    <include
+        android:id="@+id/page_bottom"
+        layout="@layout/ly_bottom_input" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/video_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page_bottom"
+        android:layout_below="@id/page_top_title">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</RelativeLayout>

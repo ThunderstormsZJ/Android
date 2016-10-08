@@ -1,0 +1,253 @@
+<resources>
+    <item name="pre_root" type="id" />
+    <item name="main_top_title" type="id" />
+    <item name="main_login_register" type="id" />
+    <item name="main_videos" type="id" />
+    <item name="main_friends" type="id" />
+    <item name="main_training" type="id" />
+
+    <item name="login_back" type="id" />
+    <item name="login_register" type="id" />
+    <item name="login_top_title" type="id" />
+    <item name="login_top_title_name" type="id" />
+    <item name="login_child_container" type="id" />
+    <item name="login_mobile" type="id" />
+    <item name="login_pwd" type="id" />
+    <item name="login_login" type="id" />
+    <item name="login_forget_pwd" type="id" />
+    <item name="login_wechat" type="id" />
+    <item name="login_qq" type="id" />
+    <item name="register_choose_type" type="id" />
+    <item name="register_type_personal" type="id" />
+    <item name="register_type_store" type="id" />
+    <item name="register_dialling_code" type="id" />
+    <item name="register_mobile" type="id" />
+    <item name="register_verify_btn" type="id" />
+    <item name="register_verify_et" type="id" />
+    <item name="register_pwd" type="id" />
+    <item name="register_pwd_2" type="id" />
+    <item name="register_register" type="id" />
+    <item name="register_agreement" type="id" />
+
+    <item name="page_top_title" type="id" />
+    <item name="page_bottom_main" type="id" />
+    <item name="page_bottom_discover" type="id" />
+    <item name="page_bottom_personal" type="id" />
+    <item name="page_bottom_navigation" type="id" />
+    <item name="browse_child_container" type="id" />
+
+    <item name="videos_back" type="id" />
+    <item name="videos_search" type="id" />
+    <item name="videos_photo" type="id" />
+    <item name="videos_main_type" type="id" />
+    <item name="videos_main_attention" type="id" />
+    <item name="videos_main_sort" type="id" />
+    <item name="videos_main_content" type="id" />
+
+    <item name="discover_labels" type="id" />
+    <item name="discover_activities" type="id" />
+    <item name="discover_topics" type="id" />
+    <item name="discover_contest" type="id" />
+    <item name="discover_recruit" type="id" />
+    <item name="discover_other" type="id" />
+    <item name="discover_slide" type="id" />
+    <item name="discover_content" type="id" />
+    <item name="discover_back" type="id" />
+    <item name="discover_city" type="id" />
+    <item name="discover_add" type="id" />
+    <item name="discover_dance_type" type="id" />
+    <item name="discover_attention" type="id" />
+    <item name="discover_sort" type="id" />
+
+    <item name="video_detail_base_frame" type="id" />
+    <item name="video_detail_base_top_frame" type="id" />
+    <item name="video_detail_base_bottom_frame" type="id" />
+    <item name="video_detail_videoview" type="id" />
+    <item name="video_detail_poster" type="id" />
+    <item name="video_detail_play" type="id" />
+    <item name="video_detail_back" type="id" />
+    <item name="video_detail_dance_name" type="id" />
+    <item name="video_detail_title" type="id" />
+    <item name="video_detail_desc" type="id" />
+    <item name="video_detail_play_count" type="id" />
+    <item name="video_detail_photo" type="id" />
+    <item name="video_detail_nickName" type="id" />
+    <item name="video_detail_attention" type="id" />
+    <item name="video_detail_likes" type="id" />
+    <item name="video_detail_forwards" type="id" />
+    <item name="video_detail_comments" type="id" />
+    <item name="video_detail_tips" type="id" />
+    <item name="video_detail_comment_all" type="id" />
+    <item name="video_detail_comment_newest" type="id" />
+
+    <item name="bottom_input_photo" type="id" />
+    <item name="bottom_input_edit" type="id" />
+
+    <item name="video_recode_cancel" type="id" />
+    <item name="video_recode_upload" type="id" />
+    <item name="video_recode_surface" type="id" />
+    <item name="video_recode_progress" type="id" />
+    <item name="video_recode_delete" type="id" />
+    <item name="video_recode_press" type="id" />
+    <item name="video_recode_play" type="id" />
+
+    <item name="video_publish_cancel" type="id" />
+    <item name="video_publish_upload" type="id" />
+    <item name="video_publish_title" type="id" />
+    <item name="video_publish_preview" type="id" />
+    <item name="video_publish_timeLength" type="id" />
+    <item name="video_publish_sizeLength" type="id" />
+    <item name="video_publish_location" type="id" />
+    <item name="video_publish_date" type="id" />
+
+    <item name="search_input" type="id" />
+    <item name="search_cancel" type="id" />
+    <item name="search_child_container" type="id" />
+    <item name="search_history_container" type="id" />
+    <item name="search_result_container" type="id" />
+
+    <item name="friend_back" type="id" />
+    <item name="friend_search" type="id" />
+    <item name="friend_main_distance" type="id" />
+    <item name="friend_main_type" type="id" />
+    <item name="friend_main_sex" type="id" />
+    <item name="friend_main_age" type="id" />
+    <item name="friend_main_content" type="id" />
+
+    <item name="user_title_name" type="id" />
+    <item name="user_title_back" type="id" />
+    <item name="user_photo" type="id" />
+    <item name="user_nickName" type="id" />
+    <item name="user_signature" type="id" />
+    <item name="user_attention" type="id" />
+    <item name="user_attest" type="id" />
+    <item name="user_page_labels" type="id" />
+    <item name="user_label_works" type="id" />
+    <item name="user_label_dynamic" type="id" />
+    <item name="user_label_attention" type="id" />
+    <item name="user_label_fans" type="id" />
+    <item name="user_label_slider" type="id" />
+    <item name="user_label_count" type="id" />
+    <item name="user_child_container" type="id" />
+    <item name="recycler_child_content" type="id" />
+
+    <item name="mine_back" type="id" />
+    <item name="mine_more" type="id" />
+    <item name="mine_photo" type="id" />
+    <item name="mine_name" type="id" />
+    <item name="mine_signature" type="id" />
+    <item name="mine_to_edit" type="id" />
+    <item name="mine_sponsor" type="id" />
+    <item name="mine_message_line" type="id" />
+    <item name="mine_message" type="id" />
+    <item name="mine_message_new" type="id" />
+    <item name="mine_related" type="id" />
+    <item name="mine_wallet" type="id" />
+    <item name="mine_attest" type="id" />
+    <item name="mine_booking" type="id" />
+    <item name="mine_settings" type="id" />
+    <item name="mine_info_photo" type="id" />
+    <item name="mine_info_head_line" type="id" />
+    <item name="mine_info_name" type="id" />
+    <item name="mine_info_signature" type="id" />
+    <item name="mine_info_tall" type="id" />
+    <item name="mine_info_age" type="id" />
+    <item name="mine_info_sex" type="id" />
+    <item name="mine_info_phone" type="id" />
+    <item name="mine_info_dance" type="id" />
+    <item name="mine_info_visible" type="id" />
+
+    <item name="mine_start_back" type="id" />
+    <item name="mine_start_add" type="id" />
+    <item name="mine_start_labels" type="id" />
+    <item name="mine_start_activities" type="id" />
+    <item name="mine_start_topics" type="id" />
+    <item name="mine_start_contest" type="id" />
+    <item name="mine_start_recruit" type="id" />
+    <item name="mine_start_other" type="id" />
+    <item name="mine_start_slide" type="id" />
+    <item name="mine_start_content" type="id" />
+
+    <item name="discover_detail_back" type="id" />
+    <item name="discover_detail_title" type="id" />
+    <item name="discover_detail_content" type="id" />
+
+    <item name="publish_back" type="id" />
+    <item name="publish_type_name" type="id" />
+    <item name="publish_send" type="id" />
+    <item name="publish_title" type="id" />
+    <item name="publish_time_start" type="id" />
+    <item name="publish_time_end" type="id" />
+    <item name="publish_organization" type="id" />
+    <item name="publish_dances" type="id" />
+    <item name="publish_address" type="id" />
+    <item name="publish_desc" type="id" />
+    <item name="publish_images" type="id" />
+    <item name="publish_salary" type="id" />
+    <item name="publish_desc_org" type="id" />
+    <item name="publish_location" type="id" />
+
+    <item name="setting_back" type="id" />
+    <item name="setting_more" type="id" />
+    <item name="setting_material" type="id" />
+    <item name="setting_pwd" type="id" />
+    <item name="setting_message" type="id" />
+    <item name="setting_cache_line" type="id" />
+    <item name="setting_cache_size" type="id" />
+    <item name="setting_service" type="id" />
+    <item name="setting_about" type="id" />
+    <item name="setting_cancel" type="id" />
+
+    <item name="replace_pwd_back" type="id" />
+    <item name="replace_pwd_more" type="id" />
+    <item name="replace_pwd_mobile" type="id" />
+    <item name="replace_pwd_verify_btn" type="id" />
+    <item name="replace_pwd_verify_et" type="id" />
+    <item name="replace_pwd_pwd" type="id" />
+    <item name="replace_pwd_pwd_2" type="id" />
+    <item name="replace_pwd_confirm" type="id" />
+
+    <item name="teacher_attest_back" type="id" />
+    <item name="teacher_attest_confirm" type="id" />
+    <item name="teacher_attest_search" type="id" />
+    <item name="teacher_attest_content" type="id" />
+
+    <item name="mine_booking_back" type="id" />
+    <item name="mine_booking_labels" type="id" />
+    <item name="mine_booking_all" type="id" />
+    <item name="mine_booking_confirmed" type="id" />
+    <item name="mine_booking_unconfirm" type="id" />
+    <item name="mine_booking_reject" type="id" />
+    <item name="mine_booking_slider" type="id" />
+    <item name="mine_booking_content" type="id" />
+
+    <item name="tag_holder" type="id" />
+    <item name="msg_report_like_withMsg_video" type="id"/>
+    <item name="msg_like_reported_withMsg_video" type="id"/>
+    <item name="msg_get_third_loginInfo" type="id"/>
+    <item name="msg_third_loginInfo_got" type="id"/>
+    <item name="msg_discover_delete_by_id" type="id"/>
+    <item name="msg_discover_by_id_delete" type="id"/>
+    <item name="msg_org_get_detail" type="id"/>
+    <item name="msg_org_detail_got" type="id"/>
+    <item name="msg_org_report_attention" type="id"/>
+    <item name="msg_org_attention_reported" type="id"/>
+    <item name="msg_org_update_info" type="id"/>
+    <item name="msg_org_info_updated" type="id"/>
+    <item name="msg_org_add_course" type="id"/>
+    <item name="msg_org_course_added" type="id"/>
+    <item name="msg_video_add_report" type="id"/>
+    <item name="msg_video_report_added" type="id"/>
+    <item name="msg_discover_add_report" type="id"/>
+    <item name="msg_discover_report_added" type="id"/>
+    <item name="msg_user_delete_video" type="id"/>
+    <item name="msg_user_video_deleted" type="id"/>
+    <item name="video_choose_path" type="id"/>
+    <item name="video_choose_poster_path" type="id"/>
+    <item name="msg_get_address_datas" type="id"/>
+    <item name="msg_get_app_version" type="id"/>
+    <item name="msg_app_version_got" type="id"/>
+    <item name="friend_main_sex_man" type="id"/>
+    <item name="friend_main_sex_no" type="id"/>
+    <item name="friend_main_sex_woman" type="id"/>
+</resources>

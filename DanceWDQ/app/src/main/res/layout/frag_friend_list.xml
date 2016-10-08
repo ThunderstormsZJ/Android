@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@id/page_top_title"-->
+        <!--style="@style/PageTitleRootStyle_Purple">-->
+
+        <!--<TextView-->
+            <!--android:id="@id/friend_back"-->
+            <!--style="@style/PageTitleBackWhiteStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/PageTitleNameWhiteStyle"-->
+            <!--android:text="@string/friend_title" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@id/friend_search"-->
+            <!--style="@style/PageTitleImgActionStyle"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@mipmap/ic_video_search" />-->
+    <!--</RelativeLayout>-->
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_label_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+       &lt;!&ndash; <cn.spinsoft.wdq.widget.Spinner
+            android:id="@id/friend_main_distance"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="附近"/>
+
+        &lt;!&ndash;<TextView style="@style/VerticalDividerLineStyle" />&ndash;&gt;
+
+        <cn.spinsoft.wdq.widget.Spinner
+            android:id="@id/friend_main_type"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="舞种"/>
+
+        &lt;!&ndash;<TextView style="@style/VerticalDividerLineStyle" />&ndash;&gt;
+
+        <cn.spinsoft.wdq.widget.Spinner
+            android:id="@id/friend_main_sex"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="性别"/>
+
+        &lt;!&ndash;<TextView style="@style/VerticalDividerLineStyle" />&ndash;&gt;
+
+        <cn.spinsoft.wdq.widget.Spinner
+            android:id="@id/friend_main_age"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="年龄"/>&ndash;&gt;
+
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/friend_main_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="附近"
+            />
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/friend_main_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="舞种"
+            />
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/friend_main_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="性别"
+            />
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/friend_main_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="年龄"
+            />
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />-->
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@id/friend_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+</LinearLayout>

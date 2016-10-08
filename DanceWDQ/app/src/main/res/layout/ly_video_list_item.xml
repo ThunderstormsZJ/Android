@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/item_vertical_space"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/videos_list_item_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/videos_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/videos_list_item_photo"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/videos_list_item_timeDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videos_list_item_name"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/videos_list_item_photo"
+            android:text="time"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_24"/>
+
+        <Button
+            android:id="@+id/videos_list_item_attention"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/video_detail_attention_sel"/>
+    </RelativeLayout>
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/videos_list_item_poster"
+            style="@style/FrescoVideoPosterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorVideoTitleBackGround"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--<TextView
+                android:id="@+id/videos_list_item_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_video_label"
+                android:drawablePadding="@dimen/text_drawable_padding_narrow"
+                android:text="label"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_22" />-->
+            <ImageView
+                android:id="@+id/videos_list_item_originalImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_video_original"/>
+
+            <TextView
+                android:id="@+id/videos_list_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_30"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <cn.spinsoft.wdq.widget.EquallyWidthLabel
+            android:id="@+id/videos_list_item_likes"
+            style="@style/VideoListItemOperStyle"
+            android:drawableLeft="@drawable/bg_video_like_wupiao_sel"
+            android:text="109"
+            android:textColor="@color/colorVideoInfoText"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+        <cn.spinsoft.wdq.widget.EquallyWidthLabel
+            android:id="@+id/videos_list_item_forwards"
+            style="@style/VideoListItemOperStyle"
+            android:drawableLeft="@mipmap/ic_video_forward"
+            android:text="108"
+            android:textColor="@color/colorVideoInfoText"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+        <cn.spinsoft.wdq.widget.EquallyWidthLabel
+            android:id="@+id/videos_list_item_comments"
+            style="@style/VideoListItemOperStyle"
+            android:drawableLeft="@mipmap/ic_video_comment"
+            android:text="123"
+            android:textColor="@color/colorVideoInfoText"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+        <cn.spinsoft.wdq.widget.EquallyWidthLabel
+            android:id="@+id/videos_list_item_tips"
+            style="@style/VideoListItemOperStyle"
+            android:drawableLeft="@drawable/video_list_item_tips_sel"
+            android:text="打赏"
+            android:textColor="@color/colorVideoInfoText"
+            android:textSize="@dimen/text_size_24"/>
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle"/>
+
+</LinearLayout>

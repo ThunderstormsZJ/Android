@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_related_item_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="43dp"
+            android:layout_height="43dp" />
+
+        <TextView
+            android:id="@+id/mine_related_item_another"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mine_related_item_photo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/mine_related_item_photo"
+            android:text="anotherName"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            android:id="@+id/mine_related_item_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mine_related_item_another"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/mine_related_item_another"
+            android:text="赞了我"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/text_size_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mine_related_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mine_related_item_photo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/mine_related_item_photo"
+            android:text="date time"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/text_size_24" />
+
+        <!--<TextView
+            android:id="@+id/mine_related_item_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="回复"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/text_size_26" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_related_item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="comment"
+        android:textColor="@color/ff333435"
+        android:textSize="@dimen/text_size_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/f2f3f4">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_related_item_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            fresco:placeholderImage="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/mine_related_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mine_related_item_img"
+            android:text="title"
+            android:textColor="@color/ff333435"
+            android:textSize="@dimen/text_size_24" />
+
+    </LinearLayout>
+
+</LinearLayout>

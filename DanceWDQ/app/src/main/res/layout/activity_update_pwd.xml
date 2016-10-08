@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@+id/update_pwd_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            style="@style/PageTitleNameBlackStyle"
+            android:text="修改密码" />
+
+        &lt;!&ndash;<ImageView&ndash;&gt;
+        &lt;!&ndash;android:id="@id/replace_pwd_more"&ndash;&gt;
+        &lt;!&ndash;style="@style/PageTitleImgActionStyle"&ndash;&gt;
+        &lt;!&ndash;android:scaleType="fitCenter"&ndash;&gt;
+        &lt;!&ndash;android:src="@mipmap/mine_more" />&ndash;&gt;
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginTop="10dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="旧  密  码" />
+
+            <EditText
+                android:id="@+id/update_pwd_oldpwd"
+                style="@style/InputLineContentStyle"
+                android:hint="请输入之前的旧密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="新  密  码" />
+
+            <EditText
+                android:id="@+id/update_pwd_newpwd"
+                style="@style/InputLineContentStyle"
+                android:hint="@string/register_pwd_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </TableRow>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="确认密码" />
+
+            <EditText
+                android:id="@+id/update_pwd_newpwd_2"
+                style="@style/InputLineContentStyle"
+                android:hint="@string/register_pwd_hint_2"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <Button
+        android:id="@+id/update_pwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/login_register_btn_sel"
+        android:text="确认"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_34" />
+
+</LinearLayout>

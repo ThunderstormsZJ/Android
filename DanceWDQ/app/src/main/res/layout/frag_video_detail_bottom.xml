@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/video_detail_photo"
+                style="@style/FrescoCircleHeadStyle"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+
+            <TextView
+                android:id="@id/video_detail_nickName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:text="NickName"
+                android:textColor="#767676"
+                android:textSize="@dimen/text_size_34" />
+
+            <Button
+                android:id="@id/video_detail_attention"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:background="@drawable/video_detail_attention_sel" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@id/video_detail_likes"
+                style="@style/EquallyWidthLabelStyle"
+                android:drawableTop="@drawable/video_detail_like_sel"
+                android:text="0"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@id/video_detail_forwards"
+                style="@style/EquallyWidthLabelStyle"
+                android:drawableTop="@drawable/video_detail_forward_sel"
+                android:text="分享给朋友"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@id/video_detail_comments"
+                style="@style/EquallyWidthLabelStyle"
+                android:drawableTop="@drawable/video_detail_comment_sel"
+                android:text="0"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@id/video_detail_tips"
+                style="@style/EquallyWidthLabelStyle"
+                android:drawableTop="@drawable/video_detail_tips_sel"
+                android:text="打赏"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_comment_title_divider" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/video_detail_comment"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@id/video_detail_comment_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/text_drawable_padding_narrow"
+                android:drawableRight="@mipmap/ic_right_more"
+                android:text="总共 0 条评论"
+                android:textColor="#b7b7b7"
+                android:textSize="@dimen/text_size_26" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/video_detail_comment_newest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/bottom_input_height" />
+    </LinearLayout>
+
+    <include layout="@layout/ly_bottom_input" />
+
+</FrameLayout>

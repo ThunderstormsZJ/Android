@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/perfect_info_user_nickname"
+        style="@style/PerfetInfoEditStyle_Write_bg"
+        android:layout_marginTop="20dp"
+        android:hint="请输入昵称"
+        />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:textSize="@dimen/text_size_30"
+            />
+
+        <RadioGroup
+            android:id="@+id/perfect_info_user_sex_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/perfect_info_user_sex_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/perfect_info_bt_sex_sel"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="男"/>
+
+            <RadioButton
+                android:id="@+id/perfect_info_user_sex_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/perfect_info_bt_sex_sel"
+                android:drawablePadding="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="女"/>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@id/mine_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            style="@style/PageTitleNameBlackStyle"
+            android:text="我的" />
+
+        <ImageView
+            android:id="@id/mine_more"
+            style="@style/PageTitleImgActionStyle"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/mine_more" />
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <RelativeLayout
+        android:id="@id/mine_to_edit"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/mine_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+
+        <TextView
+            android:id="@id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mine_photo"
+            android:layout_toRightOf="@id/mine_photo"
+            android:text="NickName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_44" />
+
+        <TextView
+            android:id="@id/mine_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mine_photo"
+            android:layout_toRightOf="@id/mine_photo"
+            android:text="signature"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_size_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/school_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/mine_sponsor"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="我发起的"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+        <RelativeLayout
+            android:id="@id/mine_message_line"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+
+            <TextView
+                android:id="@id/mine_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="私信"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_message_new"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/text_drawable_padding_narrow"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="center_vertical"
+                android:text="2条新私信"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_28" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@id/mine_related"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="与我相关"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@id/mine_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="钱包"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />
+
+        <ViewStub
+            android:id="@+id/mine_different_vs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/mine_settings"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="设置"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/page_bottom_input"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/bottom_input_height"
+              android:layout_alignParentBottom="true"
+              android:background="@android:color/white"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@id/bottom_input_photo"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_message_edit"/>
+
+    <EditText
+        android:id="@id/bottom_input_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:hint="说点什么吧...."
+        android:imeOptions="actionSend"
+        android:singleLine="true"/>
+</LinearLayout>

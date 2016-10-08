@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+ <!--   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作品"
+        android:textColor="@color/ff898989"
+        android:textSize="@dimen/text_size_24" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/org_desc_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            fresco:placeholderImage="@android:color/holo_blue_dark" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/org_desc_image2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            fresco:placeholderImage="@android:color/holo_blue_dark" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/org_desc_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            fresco:placeholderImage="@android:color/holo_blue_dark" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/org_desc_image4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            fresco:placeholderImage="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="msg_login_get_login" type="id" />
+    <item name="msg_login_login_got" type="id" />
+    <item name="msg_login_get_verify" type="id" />
+    <item name="msg_login_verify_got" type="id" />
+    <item name="msg_login_get_register" type="id" />
+    <item name="msg_login_register_got" type="id" />
+
+    <item name="msg_videos_get_video_list" type="id" />
+    <item name="msg_videos_video_list_got" type="id" />
+    <item name="msg_videos_get_ads" type="id" />
+    <item name="msg_videos_ads_got" type="id" />
+
+    <item name="msg_video_get_detail" type="id" />
+    <item name="msg_video_detail_got" type="id" />
+    <item name="msg_video_get_comment_list" type="id" />
+    <item name="msg_video_comment_list_got" type="id" />
+    <item name="msg_video_report_watch_count" type="id" />
+    <item name="msg_video_watch_count_reported" type="id" />
+    <item name="msg_video_report_tips" type="id" />
+    <item name="msg_video_tips_reported" type="id" />
+
+    <item name="msg_report_attention_video" type="id" />
+    <item name="msg_attention_reported_video" type="id" />
+    <item name="msg_report_like_video" type="id" />
+    <item name="msg_like_reported_video" type="id" />
+    <item name="msg_report_forward_video" type="id" />
+    <item name="msg_forward_reported_video" type="id" />
+    <item name="msg_send_comment_video" type="id" />
+    <item name="msg_comment_sent_video" type="id" />
+    <item name="msg_report_like_discover" type="id" />
+    <item name="msg_like_reported_discover" type="id" />
+    <item name="msg_report_forward_discover" type="id" />
+    <item name="msg_forward_reported_discover" type="id" />
+    <item name="msg_send_comment_discover" type="id" />
+    <item name="msg_comment_sent_discover" type="id" />
+
+    <item name="msg_search_get_video_list" type="id" />
+    <item name="msg_search_video_list_got" type="id" />
+    <item name="msg_search_get_friend_list" type="id" />
+    <item name="msg_search_friend_list_got" type="id" />
+    <item name="msg_search_get_org_list" type="id" />
+    <item name="msg_search_org_list_got" type="id" />
+
+    <item name="msg_friend_get_list" type="id" />
+    <item name="msg_friend_list_got" type="id" />
+    <item name="msg_report_friend_att" type="id" />
+    <item name="msg_friend_att_reported" type="id" />
+    <item name="msg_get_dance_type" type="id" />
+    <item name="msg_dance_type_got" type="id" />
+
+    <item name="msg_discover_get_list" type="id" />
+    <item name="msg_discover_list_got" type="id" />
+    <item name="msg_discover_att_get_list" type="id" />
+    <item name="msg_discover_att_list_got" type="id" />
+    <item name="msg_discover_get_detail" type="id" />
+    <item name="msg_discover_detail_got" type="id" />
+    <item name="msg_discover_get_comments" type="id" />
+    <item name="msg_discover_comments_got" type="id" />
+    <item name="msg_discover_report_sign_in" type="id" />
+    <item name="msg_discover_sign_in_reported" type="id" />
+
+    <item name="msg_user_get_detail" type="id" />
+    <item name="msg_user_detail_got" type="id" />
+    <item name="msg_user_get_videos" type="id" />
+    <item name="msg_user_videos_got" type="id" />
+    <item name="msg_user_get_dynamic" type="id" />
+    <item name="msg_user_dynamic_got" type="id" />
+    <item name="msg_user_get_attention" type="id" />
+    <item name="msg_user_attention_got" type="id" />
+    <item name="msg_user_get_fans" type="id" />
+    <item name="msg_user_fans_got" type="id" />
+
+    <item name="msg_mine_get_info_simple" type="id" />
+    <item name="msg_mine_info_simple_got" type="id" />
+    <item name="msg_mine_get_info_detail" type="id" />
+    <item name="msg_mine_info_detail_got" type="id" />
+    <item name="msg_mine_update_info" type="id" />
+    <item name="msg_mine_info_updated" type="id" />
+
+</resources>

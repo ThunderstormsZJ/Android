@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/discover_detail_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/discover_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/discover_detail_photo"
+            android:layout_toRightOf="@id/discover_detail_photo"
+            android:text="nickName"
+            android:textColor="@color/colorTextBlue"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/discover_detail_release_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discover_detail_name"
+            android:layout_toRightOf="@id/discover_detail_photo"
+            android:text="time"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/discover_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_32"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discover_detail_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="2dp"
+        android:text="desc"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_30" />
+
+    <GridLayout
+        android:id="@+id/discover_detail_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:visibility="gone">
+
+    </GridLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <ViewStub
+        android:id="@+id/discover_detail_different"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/discover_detail_forward"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            style="@style/OvalBorderBgTx"
+            android:src="@mipmap/ic_video_share" />
+
+        <ImageView
+            android:id="@+id/discover_detail_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/details_click_to_sign_in"
+            android:text="点击报名" />
+
+        <ImageView
+            android:id="@+id/discover_detail_like"
+            style="@style/OvalBorderBgTx"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/video_detail_like_sel" />
+
+        <!--<ImageView
+            android:id="@+id/discover_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/kechengxq_liuyan" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/discover_detail_likeHeads"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/discover_detail_likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/kechengxq_liuyanshu"
+            android:drawablePadding="2.5dp"
+            android:gravity="center"
+            android:text="108" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_width="25dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/discover_detail_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="5条评论"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

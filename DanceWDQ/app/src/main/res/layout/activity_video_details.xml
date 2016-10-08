@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+        <TextView
+            android:id="@+id/video_detailInfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_back_white"
+            android:drawablePadding="4dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_32"
+            android:textColor="#fff"
+            android:text="@string/back_operation"/>
+
+        <TextView
+            android:id="@+id/video_detailInfo_title"
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="@string/videos_detaile_title"/>
+
+        <ImageView
+            android:id="@+id/video_detailInfo_more"
+            style="@style/PageTitleImgActionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_item_more"/>
+    </RelativeLayout>
+    <cn.spinsoft.wdq.widget.BrowseFrameLayout
+          android:id="@id/video_detail_base_frame"
+          style="@style/ActivityLayoutRootStyle">
+        <cn.spinsoft.wdq.widget.BrowseFrameLayout
+            android:id="@id/video_detail_base_top_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <cn.spinsoft.wdq.widget.BrowseFrameLayout
+            android:id="@id/video_detail_base_bottom_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="305dp" />
+
+    </cn.spinsoft.wdq.widget.BrowseFrameLayout>
+</LinearLayout>

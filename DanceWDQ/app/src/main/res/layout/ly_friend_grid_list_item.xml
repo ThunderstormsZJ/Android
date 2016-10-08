@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/friend_list_item_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/FrescoSquareHeadStyle"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_friend_head_bg"
+        />
+
+<!--    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_friend_head_bg"/>-->
+
+    <TextView
+        android:id="@+id/friend_list_item_admireCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:drawableLeft="@mipmap/ic_friend_admire"
+        android:textColor="@color/colorTextOrange"
+        android:text="100"
+        />
+
+    <TextView
+        android:id="@+id/friend_list_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_20"
+        android:drawableLeft="@mipmap/ic_friend_location"
+        android:textColor="@color/white"
+        android:text="距离:1km"
+        />
+
+    <TextView
+        android:id="@+id/friend_list_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_above="@id/friend_list_item_location"
+        android:textSize="@dimen/text_size_26"
+        android:textColor="@color/white"
+        android:text="NickName"
+        />
+
+    <ImageView
+        android:id="@+id/friend_list_item_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_gender_man"
+        android:layout_toRightOf="@id/friend_list_item_nickname"
+        android:layout_above="@id/friend_list_item_location"
+        android:layout_marginBottom="2dp"
+        />
+
+</RelativeLayout>

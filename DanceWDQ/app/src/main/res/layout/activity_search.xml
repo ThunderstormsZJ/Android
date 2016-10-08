@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@+id/search_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="搜索" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/f7f7f7"
+        android:weightSum="1">
+
+        <cn.spinsoft.wdq.widget.SearchBar
+            android:id="@id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:hint="输入关键字搜索"
+            android:background="@color/white"
+            android:maxLength="20"
+            android:singleLine="true" />
+
+        <!--<TextView
+            android:id="@id/search_cancel"
+            style="@style/PageTitleTextActionStyle"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/colorTextGrayDarker" />-->
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <FrameLayout
+        android:id="@id/search_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

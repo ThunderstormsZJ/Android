@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/PageTitleRootStyle_Purple"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="0dp">
+
+    <TextView
+        android:id="@+id/base_title_back"
+        style="@style/PageTitleBackWhiteStyle"/>
+
+    <TextView
+        android:id="@+id/base_title_name"
+        style="@style/PageTitleNameWhiteStyle"
+        android:text="Title"/>
+
+    <TextView
+        android:id="@+id/base_title_otherfunction"
+        style="@style/PageTitleTextActionStyle"
+        android:text=""
+        android:textColor="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <!--        <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="学校简介"
+                    android:textColor="@color/ff898989"
+                    android:textSize="@dimen/text_size_24" />-->
+
+        <TextView
+            android:id="@+id/org_desc_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="desc"
+            android:textColor="@color/ff333435"
+            android:textSize="@dimen/text_size_24"/>
+
+        <!--    <TextView
+                style="@style/HorizontalDividerLineStyle"
+                android:layout_marginTop="10dp" />-->
+
+        <ViewStub
+            android:id="@+id/org_desc_images_vs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout="@layout/ly_org_desc_images"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="机构地址"
+            android:drawableLeft="@mipmap/ic_orgdetail_loacation"
+            android:textColor="@color/ff999999"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView
+            android:id="@+id/org_desc_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="address"
+            android:textColor="#b07b46"
+            android:textSize="@dimen/text_size_30"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="联系电话"
+            android:drawableLeft="@mipmap/ic_orgdetail_phone"
+            android:textColor="@color/ff999999"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView
+            android:id="@+id/org_desc_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="phone"
+            android:textColor="#b07b46"
+            android:textSize="@dimen/text_size_30"/>
+
+        <!--<ImageView
+            android:id="@+id/org_desc_phone_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@mipmap/school_tell" />-->
+
+    </LinearLayout>
+
+</ScrollView>

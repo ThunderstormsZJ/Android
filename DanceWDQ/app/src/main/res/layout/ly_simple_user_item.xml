@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple_user_item_logo"
+        style="@style/FrescoOrgLogoStyle"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/simple_user_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28"
+        android:textStyle="bold" />
+
+    <ViewStub
+        android:id="@+id/simple_user_item_different"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

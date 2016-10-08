@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:background="@android:color/black">
+
+    <cn.spinsoft.wdq.album.HackyViewPager
+        android:id="@+id/picture_img_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<RelativeLayout
+        style="@style/PageTitleRootStyle_White"
+        android:background="#89898989">
+
+        <TextView
+            android:id="@+id/picture_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            android:id="@+id/picture_title"
+            style="@style/PageTitleNameBlackStyle"
+            android:text="1/2" />
+
+        &lt;!&ndash;<TextView&ndash;&gt;
+        &lt;!&ndash;android:id="@+id/mine_info_confirm"&ndash;&gt;
+        &lt;!&ndash;style="@style/PageTitleTextActionStyle"&ndash;&gt;
+        &lt;!&ndash;android:text="提交"&ndash;&gt;
+        &lt;!&ndash;android:textColor="@color/page_title_text_color" />&ndash;&gt;
+
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+   <!-- <TextView
+        android:id="@+id/picture_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#89898989"
+        android:maxLines="5"
+        android:padding="10dp"
+        android:text="introduce"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_24" />-->
+
+</FrameLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/video_detail_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/ic_video_original"/>
+
+        <TextView
+            android:id="@id/video_detail_dance_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_detail_title"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/ic_video_label"
+            android:drawablePadding="@dimen/text_drawable_padding_narrow"
+            android:text="label"
+            android:textColor="#b7b7b7"
+            android:textSize="@dimen/text_size_24"/>
+
+        <TextView
+            android:id="@id/video_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/video_detail_original"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_30"/>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_below="@id/video_detail_title"
+            />
+
+        <TextView
+            android:id="@id/video_detail_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/video_detail_title"
+            android:drawableLeft="@mipmap/ic_watch_count"
+            android:drawablePadding="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:text="12345"
+            android:textColor="#b7b7b7"
+            android:textSize="@dimen/text_size_24"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/video_detail_forward_count"
+            style="@style/OvalBorderBgTx"
+            android:drawableLeft="@mipmap/ic_video_share"
+            android:text="99"/>
+
+        <ImageView
+            android:id="@+id/video_detail_reword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_video_reword"/>
+
+        <TextView
+            android:id="@+id/video_detail_likeCount"
+            style="@style/OvalBorderBgTx"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/bg_vide_detail_like_wupiao_sel"
+            android:text="109"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/video_detail_likeHeads"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/video_detail_rewordCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="19人打赏"
+            android:textSize="@dimen/text_size_24"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/video_detail_commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_right_more"
+            android:text="5条评论"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_24"/>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

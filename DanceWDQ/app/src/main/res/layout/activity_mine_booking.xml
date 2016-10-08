@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+ <!--   <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@id/mine_booking_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            android:id="@+id/mine_booking_title"
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="我的预约" />
+
+        &lt;!&ndash;<TextView&ndash;&gt;
+        &lt;!&ndash;android:id="@id/teacher_attest_confirm"&ndash;&gt;
+        &lt;!&ndash;style="@style/PageTitleTextActionStyle"&ndash;&gt;
+        &lt;!&ndash;android:text="提交"&ndash;&gt;
+        &lt;!&ndash;android:textColor="@color/page_title_text_color" />&ndash;&gt;
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_label_height">
+
+        <cn.spinsoft.wdq.widget.RadioGroup
+            android:id="@id/mine_booking_labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@id/mine_booking_all"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="全部"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+
+            <TextView
+                android:id="@id/mine_booking_confirmed"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="已确认"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+
+            <TextView
+                android:id="@id/mine_booking_unconfirm"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="待确认"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+
+            <TextView
+                android:id="@id/mine_booking_reject"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="已拒绝"
+                android:textColor="@color/label_type_textcolor_sel" />
+        </cn.spinsoft.wdq.widget.RadioGroup>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_below="@id/mine_booking_labels" />
+
+        <TextView
+            android:id="@id/mine_booking_slider"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/page_label_slider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorSlideLinePurple" />
+    </RelativeLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@id/mine_booking_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

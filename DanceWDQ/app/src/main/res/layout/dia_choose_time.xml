@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/dia_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <cn.spinsoft.wdq.widget.wheel.RecycleWheelView
+            android:id="@+id/choose_time_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:recycleWheelLineColor="@color/divider_gray"
+            app:recycleWheelLineThickness="1px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年" />
+
+        <cn.spinsoft.wdq.widget.wheel.RecycleWheelView
+            android:id="@+id/choose_time_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:recycleWheelLineColor="@color/divider_gray"
+            app:recycleWheelLineThickness="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月" />
+
+        <cn.spinsoft.wdq.widget.wheel.RecycleWheelView
+            android:id="@+id/choose_time_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:recycleWheelLineColor="@color/divider_gray"
+            app:recycleWheelLineThickness="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日" />
+
+        <cn.spinsoft.wdq.widget.wheel.RecycleWheelView
+            android:id="@+id/choose_time_hour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:recycleWheelLineColor="@color/divider_gray"
+            app:recycleWheelLineThickness="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/choose_time_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dia_bottom_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="@dimen/text_size_36" />
+
+</LinearLayout>

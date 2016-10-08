@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">舞蹈Q</string>
+
+    <string name="main_login_register">登录/注册</string>
+    <string name="action_back">返回</string>
+    <string name="action_confirm">确定</string>
+
+    <string name="login_login_str">登录</string>
+    <string name="action_register">注册</string>
+    <string name="login_mobile_hint">请输入手机号码</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_forget_pwd">忘记密码?</string>
+    <string name="login_rest_pwd">重置密码</string>
+    <string name="register_choose_type">选择注册的类型:</string>
+    <string name="register_personal">个人</string>
+    <string name="register_store">商家</string>
+    <string name="register_get_verify">获取验证码</string>
+    <string name="register_mobile">手机号</string>
+    <string name="register_verify">验证码</string>
+    <string name="register_verify_hint">请输入验证码</string>
+    <string name="register_pwd"><![CDATA[密\t\t 码]]></string>
+    <string name="register_pwd_hint">6-32位字母数字组合</string>
+    <string name="register_pwd_hint_2">重复前面的密码</string>
+    <string name="register_agreement"><![CDATA[我已阅读并同意舞蹈圈]]></string>
+    <string name="toast_login_success">登录成功</string>
+    <string name="toast_login_unsuccess">登录失败,请检查您的输入或稍后再试</string>
+    <string name="toast_login_verify_success">验证码发送成功,请注意查看您的手机</string>
+    <string name="toast_login_verify_unsuccess">验证码发送失败,请检查您的输入或稍后再试</string>
+    <string name="toast_register_success">恭喜您,注册登陆成功</string>
+    <string name="toast_register_unsuccess">注册失败,请检查您的输入或稍后再试</string>
+
+    <string name="videos_title">视频</string>
+    <string name="videos_detaile_title">视频详情</string>
+    <string name="page_bottom_main">主页</string>
+    <string name="page_bottom_discover">发现</string>
+    <string name="page_bottom_personal">我的</string>
+
+    <string name="videos_main_attention">我的关注</string>
+    <string name="videos_main_dance_default">全部舞蹈</string>
+
+    <string name="videos_dia_camera_recode">录像</string>
+    <string name="videos_dia_camera_choose_from_mobile">从手机选择</string>
+    <string name="videos_dia_camera_cancel">取消</string>
+
+    <string name="video_detail_comment">评论</string>
+    <string name="video_comment_list_item_reply">回复</string>
+    <string name="toast_user_is_unvalidity">用户信息不可用,请先登录/注册</string>
+
+    <string name="friend_title">舞友</string>
+    <string name="back_operation">返回</string>
+    <string name="register_title_name">欢迎使用中国舞蹈社交第一平台</string>
+    <string name="wallet_withdraw_tip">提现金额收取5%手续费;提现金额最低不少于100元;到账时间1 - 3个工作日</string>
+    <string name="bindphone_tip">初始密码：000000请及时修改密码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--session-->
+    <string name="input_panel_file">发送文件</string>
+    <string name="input_panel_audio_call">语音通话</string>
+    <string name="input_panel_video_call">视频通话</string>
+    <string name="input_panel_guess">猜 拳</string>
+    <string name="location_open_map_error">开打地图出错</string>
+    <string name="location_map">地图定位</string>
+    <string name="location_loading">正常定位</string>
+    <string name="my_location">我的位置</string>
+    <string name="location_address_unkown">该位置信息占无</string>
+    <string name="location_navigate">导航</string>
+    <string name="format_mylocation">我的位置：%s</string>
+    <string name="location_address_fail">获取位置信息失败</string>
+    <string name="tools_selected">选择工具</string>
+    <string name="friends_map_navigation_web">在网页中打开</string>
+
+</resources>

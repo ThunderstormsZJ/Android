@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dia_bottom_bg"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dia_camera_recode"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="@dimen/text_size_36"
+            android:background="@android:color/transparent"
+            android:text="@string/videos_dia_camera_recode" />
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <Button
+            android:id="@+id/dia_camera_choose"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/text_size_36"
+            android:text="@string/videos_dia_camera_choose_from_mobile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dia_camera_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size_36"
+        android:background="@drawable/dia_bottom_bg"
+        android:text="@string/videos_dia_camera_cancel" />
+
+</LinearLayout>

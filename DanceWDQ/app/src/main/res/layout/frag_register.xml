@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/login_register_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#19ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/register_title_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_30"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/register_choose_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="注册个人账号"
+            android:textColor="#7fffffff"
+            android:textSize="@dimen/text_size_24"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <cn.spinsoft.wdq.widget.RadioGroup
+                android:id="@+id/register_labels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/register_choose_person"
+                    style="@style/PageLabelRadioButtonStyle"
+                    android:text="个人"
+                    android:textColor="@color/label_type_textcolor_white_sel"
+                    android:textSize="@dimen/text_size_36"/>
+
+                <TextView
+                    android:id="@+id/register_choose_org"
+                    style="@style/PageLabelRadioButtonStyle"
+                    android:text="机构"
+                    android:textColor="@color/label_type_textcolor_white_sel"
+                    android:textSize="@dimen/text_size_36"/>
+            </cn.spinsoft.wdq.widget.RadioGroup>
+
+            <TextView
+                android:id="@id/discover_slide"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/page_label_slider_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/slideUnderLine"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@id/register_mobile"
+                style="@style/LoginNewEditInputStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/login_phone"
+                android:hint="手机号码"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"/>
+
+            <cn.spinsoft.wdq.widget.VerifyButton
+                android:id="@+id/register_verify_btn"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_btn_round_white_shape"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/verify_btn_textcolor_sel"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <EditText
+            android:id="@id/register_verify_et"
+            style="@style/LoginNewEditInputStyle"
+            android:drawableLeft="@mipmap/login_verify"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="请输入6位验证码"
+            android:imeOptions="actionNext"
+            />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <EditText
+            android:id="@id/register_pwd"
+            style="@style/LoginNewEditInputStyle"
+            android:drawableLeft="@mipmap/login_password"
+            android:hint="6-32位字母或数字组合"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <Button
+            android:id="@+id/register_doregiste"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_btn_round_purple_shape"
+            android:text="注 册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_38"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@id/register_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:button="@drawable/register_check_button_sel"
+                android:checked="true"
+                android:text="@string/register_agreement"
+                android:textSize="@dimen/text_size_28"/>
+
+            <Button
+                android:id="@+id/register_userread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="《用户使用协议》"
+                android:textColor="#ff00b6"
+                android:textSize="@dimen/text_size_28"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="手机号码"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_column="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@id/register_mobile"
+                    style="@style/InputLineContentStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:hint="@string/login_mobile_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+
+                <cn.spinsoft.wdq.widget.VerifyButton
+                    android:id="@+id/register_verify_btn"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/verify_btn_textcolor_sel"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TextView style="@style/HorizontalDividerLineStyle"/>
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="验  证  码"/>
+
+            <EditText
+                android:id="@id/register_verify_et"
+                style="@style/InputLineContentStyle"
+                android:hint="@string/register_verify_hint"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="6"/>
+        </TableRow>
+
+        <TextView style="@style/HorizontalDividerLineStyle"/>
+
+        <TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="密        码"/>
+
+            <EditText
+                android:id="@id/register_pwd"
+                style="@style/InputLineContentStyle"
+                android:hint="@string/register_pwd_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+        </TableRow>
+
+        <TextView style="@style/HorizontalDividerLineStyle"/>
+
+        &lt;!&ndash;<TableRow>
+
+            <TextView
+                style="@style/InputLineNameStyle"
+                android:text="确认密码" />
+
+            <EditText
+                android:id="@id/register_pwd_2"
+                style="@style/InputLineContentStyle"
+                android:hint="@string/register_pwd_hint_2"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </TableRow>&ndash;&gt;
+
+    </TableLayout>
+
+</LinearLayout>
+
+<TextView style="@style/HorizontalDividerLineStyle"/>
+
+<Button
+    android:id="@id/register_register"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="23dp"
+    android:background="@drawable/login_register_btn_sel"
+    android:enabled="false"
+    android:text="@string/action_register"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/text_size_34"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:gravity="center">
+
+    <CheckBox
+        android:id="@id/register_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:button="@drawable/check_button_sel"
+        android:checked="true"
+        android:text="@string/register_agreement"
+        android:textSize="@dimen/text_size_28"/>
+
+    <Button
+        android:id="@+id/register_userread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="《用户使用协议》"
+        android:textColor="#3399ff"
+        android:textSize="@dimen/text_size_28"
+        />
+</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="44dp"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/discover_detail_contact"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_page_title_purple"
+        android:gravity="center"
+        android:text="联系对方"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_36"
+        />
+</LinearLayout>

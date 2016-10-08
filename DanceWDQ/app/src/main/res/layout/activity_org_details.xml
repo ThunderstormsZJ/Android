@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@+id/org_detail_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            android:id="@+id/org_detail_name"
+            style="@style/PageTitleNameBlackStyle"
+            android:ellipsize="middle"
+            android:maxLength="10"
+            android:text="机构详情" />
+
+        <ImageView
+            android:id="@+id/org_detail_more"
+            style="@style/PageTitleImgActionStyle"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/mine_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@mipmap/org_details_bg"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/org_detail_photo"
+                style="@style/FrescoCircleHeadStyle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                fresco:roundingBorderColor="@color/colorTextOrange"
+                fresco:roundingBorderWidth="1dp" />
+
+            <TextView
+                android:id="@+id/org_detail_orgName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="OrgName"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/org_detail_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_label_height">
+
+        <cn.spinsoft.wdq.widget.RadioGroup
+            android:id="@+id/org_detail_labels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/org_detail_desc"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="简介"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@+id/org_detail_works"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="作品"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@+id/org_detail_course"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="课程"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@+id/org_detail_dynamic"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="动态"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@+id/org_detail_teacher"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="教师"
+                android:textColor="@color/label_type_textcolor_sel" />
+        </cn.spinsoft.wdq.widget.RadioGroup>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/org_detail_slide"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/page_label_slider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorTextOrange" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/org_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

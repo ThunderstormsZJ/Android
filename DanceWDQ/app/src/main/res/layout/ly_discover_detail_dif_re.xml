@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:stretchColumns="1">
+
+    <!--<TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘职位:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/discover_detail_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘职位"
+            android:textColor="@color/ff898989"
+            android:textSize="@dimen/text_size_24" />
+    </TableRow>-->
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薪资水平:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/discover_detail_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薪资水平"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/ff898989"
+            android:textSize="@dimen/text_size_24" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="2.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舞&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;种:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/discover_detail_dance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="舞种"
+            android:textColor="@color/ff898989"
+            android:textSize="@dimen/text_size_24" />
+    </TableRow>
+
+   <!-- <TableRow android:layout_marginTop="2.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘单位:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/discover_detail_orgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘单位"
+            android:textColor="@color/ff898989"
+            android:textSize="@dimen/text_size_24" />
+    </TableRow>-->
+
+    <TableRow android:layout_marginTop="2.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单位简介:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/discover_detail_orgDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="单位简介"
+            android:textColor="@color/ff898989"
+            android:textSize="@dimen/text_size_24" />
+    </TableRow>
+
+</TableLayout>

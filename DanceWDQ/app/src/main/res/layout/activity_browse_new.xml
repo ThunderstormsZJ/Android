@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/browse_drawer_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".browse.BrowseNewActivity">
+
+    <!--主体布局-->
+    <RelativeLayout
+        android:id="@+id/browse_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/browse_title_root"
+            style="@style/PageTitleRootStyle_Purple"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/browse_user"
+                style="@style/FrescoCircleBrowseHeadStyle"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/browse_title"
+                style="@style/PageTitleNameWhiteStyle"
+                android:text="@string/videos_title"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                >
+                <ImageView
+                    android:id="@+id/browse_search"
+                    style="@style/PageTitleImgActionStyle"
+                    android:src="@mipmap/ic_video_search"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/browse_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:src="@mipmap/ic_item_more"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/browse_add"
+                style="@style/PageTitleImgActionStyle"
+                android:src="@mipmap/icon_title_add"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <cn.spinsoft.wdq.widget.RadioGroup
+            android:id="@+id/browse_navigation_root"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <FrameLayout
+                android:id="@+id/browse_navigation_video"
+                style="@style/HomeNavigationStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2.5dp"
+                    android:drawableTop="@drawable/main_sel"
+                    android:text="视频"
+                    android:textColor="@color/video_navigation_textcolor_sel"
+                    android:textSize="@dimen/text_size_22"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/browse_navigation_friend"
+                style="@style/HomeNavigationStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2.5dp"
+                    android:drawableTop="@drawable/friend_sel"
+                    android:text="舞友"
+                    android:textColor="@color/video_navigation_textcolor_sel"
+                    android:textSize="@dimen/text_size_22"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/browse_navigation_camera"
+                style="@style/HomeNavigationStyle"
+                android:background="@drawable/camera_sel"/>
+
+            <FrameLayout
+                android:id="@+id/browse_navigation_org"
+                style="@style/HomeNavigationStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2.5dp"
+                    android:drawableTop="@drawable/org_sel"
+                    android:text="培训"
+                    android:textColor="@color/video_navigation_textcolor_sel"
+                    android:textSize="@dimen/text_size_22"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/browse_navigation_discover"
+                style="@style/HomeNavigationStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2.5dp"
+                    android:drawableTop="@drawable/discover_sel"
+                    android:text="发现"
+                    android:textColor="@color/video_navigation_textcolor_sel"
+                    android:textSize="@dimen/text_size_22"/>
+            </FrameLayout>
+        </cn.spinsoft.wdq.widget.RadioGroup>
+
+        <FrameLayout
+            android:id="@id/browse_child_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/browse_navigation_root"
+            android:layout_below="@id/browse_title_root"/>
+    </RelativeLayout>
+
+    <!--侧滑布局-->
+    <LinearLayout
+        android:id="@+id/browse_drawer_layout"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginRight="50dp"
+        android:background="#4b3c55"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/browse_menu_head"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@mipmap/browse_menu_bg"
+            android:gravity="center_vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/browse_menu_user"
+                style="@style/FrescoOrgLogoStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/browse_menu_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/browse_menu_user"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/browse_menu_user"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="NickName"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_36"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/browse_menu_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/browse_menu_nickName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/browse_menu_user"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Signature"
+                android:textColor="#e9e9e9"
+                android:textSize="@dimen/text_size_24"/>
+
+            <TextView
+                android:id="@+id/browse_menu_loginHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/browse_menu_nickName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/browse_menu_user"
+                android:text="登陆后享受更多特权"
+                android:textColor="#e9e9e9"
+                android:textSize="@dimen/text_size_24"/>
+        </RelativeLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/browse_menu_userCenter"-->
+        <!--style="@style/BrowseMenuItemStyle"-->
+        <!--android:drawableLeft="@mipmap/user_center"-->
+        <!--android:text="个人中心" />-->
+
+        <TextView
+            android:id="@+id/browse_menu_mineStart"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/mine_start"
+            android:text="我的发布"/>
+
+        <TextView
+            android:id="@+id/browse_menu_privateMsg"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/icon_private_msg_v2"
+            android:text="消息"/>
+
+        <TextView
+            android:id="@+id/browse_menu_relatedMe"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/related_me"
+            android:text="与我相关"/>
+
+        <TextView
+            android:id="@+id/browse_menu_wallet"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/wallet"
+            android:text="钱包"/>
+
+        <TextView
+            android:id="@+id/browse_menu_orderBook"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/mine_booking"
+            android:text="预约订单"/>
+
+        <TextView
+            android:id="@+id/browse_menu_inviteTeacher"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/invite_teacher"
+            android:text="邀请老师入驻"/>
+
+        <TextView
+            android:id="@+id/browse_menu_authenticateTeacher"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/teacher_attest"
+            android:text="待认证老师"/>
+
+        <TextView
+            android:id="@+id/browse_menu_teacherAttest"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/teacher_attest"
+            android:text="教师认证"/>
+
+        <TextView
+            android:id="@+id/browse_menu_mineBooking"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/mine_booking"
+            android:text="我的预约"/>
+
+        <TextView
+            android:id="@+id/browse_menu_about"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/about"
+            android:text="关于我们"/>
+
+        <TextView
+            android:id="@+id/browse_menu_settings"
+            style="@style/BrowseMenuItemStyle"
+            android:drawableLeft="@mipmap/settings"
+            android:text="设置"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="9">
+
+    <TextView
+        android:id="@+id/sign_item_name"
+        style="@style/SignTitleStyle"
+        android:text="姓名"
+        />
+    <TextView
+        android:id="@+id/sign_item_telephone"
+        style="@style/SignTitleStyle"
+        android:layout_weight="3"
+        android:text="手机号码"
+        />
+    <TextView
+        android:id="@+id/sign_item_personnum"
+        style="@style/SignTitleStyle"
+        android:text="人数"
+        />
+    <TextView
+        android:id="@+id/sign_item_remark"
+        style="@style/SignTitleStyle"
+        android:text="备注"
+        />
+</LinearLayout>

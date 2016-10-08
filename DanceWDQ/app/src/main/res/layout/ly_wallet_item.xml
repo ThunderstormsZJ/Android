@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/wallet_item_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收到赞赏"
+        android:textColor="#666666"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        android:id="@+id/wallet_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallet_item_reason"
+        android:layout_marginTop="2dp"
+        android:text="date time"
+        android:textColor="#ababab"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        android:id="@+id/wallet_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="+2.00"
+        android:textColor="@color/ff333435"
+        android:textSize="@dimen/text_size_24" />
+</RelativeLayout>

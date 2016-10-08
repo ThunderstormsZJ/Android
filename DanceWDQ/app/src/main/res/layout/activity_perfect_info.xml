@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/plug_base_title"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/perfect_info_head"
+        style="@style/FrescoCircleHeadStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/perfect_info_headtip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="设置头像"
+        android:textColor="@color/color_grey_999999"
+        />
+
+
+    <ViewStub
+        android:id="@+id/perfect_info_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/perfect_info_complete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_purple_gray_sel"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="完  成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_38"
+        />
+
+
+</LinearLayout>

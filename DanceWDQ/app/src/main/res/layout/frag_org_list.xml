@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/page_top_title"-->
+        <!--style="@style/PageTitleRootStyle_Purple">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/org_back"-->
+            <!--style="@style/PageTitleBackWhiteStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/PageTitleNameWhiteStyle"-->
+            <!--android:text="培训机构" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/org_search"-->
+            <!--style="@style/PageTitleImgActionStyle"-->
+            <!--android:src="@mipmap/ic_video_search" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!--<cn.spinsoft.wdq.widget.Spinner
+            android:id="@+id/org_main_distance"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="附近"/>-->
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/org_main_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="附近"/>
+
+        <!--<TextView style="@style/VerticalDividerLineStyle" />-->
+
+      <!--  <cn.spinsoft.wdq.widget.Spinner
+            android:id="@+id/org_main_type"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="舞种"/>-->
+
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/org_main_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="舞种"/>
+
+        <!--<TextView style="@style/VerticalDividerLineStyle" />-->
+
+        <!--<cn.spinsoft.wdq.widget.Spinner
+            android:id="@+id/org_main_popular"
+            style="@style/PageFilterSpinnerStyle"
+            android:text="人气"/>-->
+
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/org_main_popular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="人气"/>
+
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/org_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/mine_booking_item_orgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_right_more"
+        android:text="org nickName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_24" />
+
+    <!--<TextView
+        android:id="@+id/mine_booking_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="state"
+        android:textColor="@color/colorTextOrange"
+        android:textSize="@dimen/text_size_24" />-->
+
+    <ImageView
+        android:id="@+id/mine_booking_item_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/order_org_wait_confirm"
+        />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_below="@id/mine_booking_item_orgName"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/mine_booking_item_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_booking_item_orgName"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="course nickName"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mine_booking_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_booking_item_course"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/dingdan_clock"
+        android:drawablePadding="5dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="booking time"
+        android:textColor="#666"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_below="@id/mine_booking_item_time"
+        android:layout_marginTop="10dp" />
+
+    <ViewStub
+        android:id="@+id/mine_booking_item_different"
+        android:layout_width="match_parent"
+        android:layout_below="@id/mine_booking_item_time"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

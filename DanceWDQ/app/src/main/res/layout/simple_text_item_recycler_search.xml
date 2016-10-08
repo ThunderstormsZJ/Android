@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/simple_text_item_text"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:ellipsize="marquee"
+          android:gravity="left|center_vertical"
+          android:padding="7dp"
+          android:singleLine="true"
+          android:background="@color/barTitleBackGround"
+          android:textColor="@android:color/black"
+          android:layout_marginBottom="1dp"
+          android:textSize="@dimen/text_size_28">
+
+</TextView>

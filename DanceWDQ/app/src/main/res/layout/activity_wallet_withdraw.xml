@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e9edf0"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/plug_base_title"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/wallet_withdraw_headphoto"
+        style="@style/FrescoCircleHeadStyle"
+        android:layout_marginTop="30dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        />
+
+    <TextView
+        android:id="@+id/wallet_withdraw_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_36"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="NickName"
+        />
+
+    <TextView
+        android:id="@+id/wallet_withdraw_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666"
+        android:textSize="@dimen/text_size_28"
+        android:text="186****5339"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_btn_round_white_shape">
+
+        <TextView
+            android:id="@+id/wallet_withdraw_num_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size_30"
+            android:text="提现金额"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wallet_withdraw_num_tip"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:text="￥"
+            />
+
+        <EditText
+            android:id="@+id/wallet_withdraw_input_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wallet_withdraw_num_tip"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_below="@id/wallet_withdraw_input_num"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/wallet_withdraw_surplus_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/wallet_withdraw_input_num"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"
+            android:text="零钱金额￥147.62,"
+            />
+
+        <Button
+            android:id="@+id/wallet_withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/wallet_withdraw_input_num"
+            android:layout_toRightOf="@id/wallet_withdraw_surplus_num"
+            android:textSize="@dimen/text_size_28"
+            android:textColor="#ff9900"
+            android:text="全部提现"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wallet_withdraw_warn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="#666"
+            android:text="@string/wallet_withdraw_tip"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wallet_withdraw_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_btn_orange_gray_sel"
+        android:textSize="@dimen/text_size_36"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="确认转账"
+        />
+
+</LinearLayout>

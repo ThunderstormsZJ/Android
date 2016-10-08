@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="input_text_color">@color/cccccc</color>
+    <color name="dia_sign_in_edit_text_color">@color/c2c2c2</color>
+    <color name="page_title_text_color">@color/ff9900</color>
+    <color name="publish_input_name_text_color">@color/ff2b2b2b</color>
+    <color name="publish_input_content_text_color">@color/input_text_color</color>
+    <color name="publish_type_choose_title_text_color">@color/ff898989</color>
+    <color name="publish_type_choose_name_text_color">@color/ff333435</color>
+</resources>

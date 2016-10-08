@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/friend_list_item_photo"
+        style="@style/FrescoCircleHeadStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/friend_list_item_option"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/friend_add" />
+
+    <TextView
+        android:id="@+id/friend_list_item_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/friend_list_item_photo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/friend_list_item_photo"
+        android:text="NickName"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_30" />
+
+    <TextView
+        android:id="@+id/friend_list_item_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/friend_list_item_nickName"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/friend_list_item_option"
+        android:layout_toRightOf="@id/friend_list_item_nickName"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="desc"
+        android:textColor="#7d7d7d"
+        android:textSize="@dimen/text_size_20" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/friend_list_item_nickName"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/friend_list_item_option">
+
+        <LinearLayout
+            android:id="@+id/friend_list_item_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/friend_list_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/friend_list_item_photo"
+        android:layout_alignLeft="@id/friend_list_item_nickName"
+        android:text="distance"
+        android:textColor="#666666"
+        android:textSize="@dimen/text_size_20" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_alignLeft="@id/friend_list_item_nickName"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_kecheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:text="课程名称"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:text="简介"
+        android:textColor="#cccccc"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_jianjie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="简介123"
+        android:textColor="#565656"
+        android:textSize="14sp" />
+
+    <cn.spinsoft.wdq.education.frament.school.MyGridView
+        android:id="@+id/gradview_kecheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_kecheng_zhunfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kechengxq_zhuanfas" />
+
+        <ImageView
+            android:id="@+id/iv_kecheng_baoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_kecheng_xihuan"
+            android:layout_marginEnd="78dp"
+            android:layout_marginRight="78dp"
+            android:layout_toLeftOf="@+id/iv_kecheng_xihuan"
+            android:layout_toStartOf="@+id/iv_kecheng_xihuan"
+            android:src="@mipmap/details_click_to_sign_in" />
+
+        <ImageView
+            android:id="@+id/iv_kecheng_xihuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_kecheng_liuyan"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/iv_kecheng_liuyan"
+            android:layout_toStartOf="@+id/iv_kecheng_liuyan"
+            android:src="@mipmap/kechengxq_moren" />
+
+        <ImageView
+            android:id="@+id/iv_kecheng_liuyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_kecheng_zhunfa"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@mipmap/kechengxq_liuyan" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        android:text="评论" />
+
+
+</LinearLayout>

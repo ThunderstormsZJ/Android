@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_jiaoshi_touxiang"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/tv_jiaoshi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/iv_jiaoshi_touxiang"
+        android:layout_toRightOf="@+id/iv_jiaoshi_touxiang"
+        android:text="m"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_jiaoshi_jujue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_jiaoshi_queren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/iv_jiaoshi_jujue"
+        android:layout_toStartOf="@+id/iv_jiaoshi_jujue" />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/dia_address_choose_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_purple"
+            android:text="取消"
+            />
+
+        <TextView
+            android:id="@+id/dia_address_choose_comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:textColor="@color/text_purple"
+            android:text="完成"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <cn.spinsoft.wdq.widget.linkwidget.WheelView
+            android:id="@+id/dia_address_choose_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </cn.spinsoft.wdq.widget.linkwidget.WheelView>
+
+        <cn.spinsoft.wdq.widget.linkwidget.WheelView
+            android:id="@+id/dia_address_choose_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </cn.spinsoft.wdq.widget.linkwidget.WheelView>
+
+        <cn.spinsoft.wdq.widget.linkwidget.WheelView
+            android:id="@+id/dia_address_choose_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </cn.spinsoft.wdq.widget.linkwidget.WheelView>
+    </LinearLayout>
+</LinearLayout>

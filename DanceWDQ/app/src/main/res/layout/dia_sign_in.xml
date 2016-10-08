@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_dia_window_sign_in"
+    android:orientation="vertical"
+    android:padding="17dp">
+
+    <EditText
+        android:id="@+id/dia_sign_in_name"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="@drawable/dia_edit_bg"
+        android:hint="姓名(必填)"
+        android:imeOptions="actionNext"
+        android:text=""
+        android:maxLength="10"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/dia_sign_in_edit_text_color"
+        android:textSize="@dimen/dia_sign_in_edit_text_size" />
+
+    <EditText
+        android:id="@+id/dia_sign_in_phone"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dia_edit_bg"
+        android:hint="联系方式(必填)"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:text=""
+        android:maxLength="15"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/dia_sign_in_edit_text_color"
+        android:textSize="@dimen/dia_sign_in_edit_text_size" />
+
+    <EditText
+        android:id="@+id/dia_sign_in_count"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dia_edit_bg"
+        android:hint="人数"
+        android:text=""
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/dia_sign_in_edit_text_color"
+        android:textSize="@dimen/dia_sign_in_edit_text_size" />
+
+    <EditText
+        android:id="@+id/dia_sign_in_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dia_edit_bg"
+        android:hint="备注"
+        android:imeOptions="actionSend"
+        android:maxLines="4"
+        android:text=""
+        android:minHeight="29dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/dia_sign_in_edit_text_color"
+        android:textSize="@dimen/dia_sign_in_edit_text_size" />
+
+    <Button
+        android:id="@+id/dia_sign_in_confirm"
+        android:layout_width="215dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_round_orange"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dia_sign_in_confirm_text_size" />
+</LinearLayout>

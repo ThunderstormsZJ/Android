@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGray">
+
+    <RelativeLayout
+        android:id="@+id/page_top_title"
+        style="@style/PageTitleRootStyle">
+
+        <TextView
+            android:id="@+id/videos_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="培训机构" />
+
+
+        <ImageView
+            android:id="@id/videos_search"
+            style="@style/PageTitleImgActionStyle"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_video_search" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/page_bottom_navigation"
+        layout="@layout/ly_page_bottom_navigation" />
+
+    <FrameLayout
+        android:id="@+id/education_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page_bottom_navigation"
+        android:layout_below="@id/page_top_title" />
+
+</RelativeLayout>

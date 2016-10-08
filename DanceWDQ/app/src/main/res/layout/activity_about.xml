@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/plug_base_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/about_app_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舞蹈Q 1.00"/>
+
+            <TextView
+                style="@style/AboutTexttTitleStyle"
+                android:layout_marginTop="20dp"
+                android:text="定位"
+                />
+
+            <TextView
+                style="@style/AboutTextContentStyle"
+                android:text="移动社交第一平台\n舞蹈爱好第一入口"
+                />
+
+            <TextView
+                style="@style/AboutTexttTitleStyle"
+                android:layout_marginTop="20dp"
+                android:text="价值主张"
+                />
+
+            <TextView
+                style="@style/AboutTextContentStyle"
+                android:text="链接关于舞蹈的一切\n让舞蹈更快乐 更科学 更有趣"
+                />
+
+            <TextView
+                style="@style/AboutTexttTitleStyle"
+                android:layout_marginTop="20dp"
+                android:text="联系我们"
+                />
+            <TextView
+                style="@style/AboutTextContentStyle"
+                android:text="深圳舞蹈圈网络文化传媒有限公司"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/AboutTextContentStyle"
+                    android:text="电话："
+                    />
+                <TextView
+                    android:id="@+id/about_callphone"
+                    style="@style/AboutTextContentStyle"
+                    android:text="0755-22678336"
+                    android:textColor="@color/colorTextBlue"
+                    />
+
+                <TextView
+                    style="@style/AboutTextContentStyle"
+                    android:layout_marginLeft="10dp"
+                    android:text="传真：0755-22678336"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/AboutTextContentStyle"
+                android:text="地址：深圳市宝安区银田路4号智谷科技园\n客服邮箱：liuwei@wudaoquan.com\n微信公众号：wudaoquan888\nQQ：979307467"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:drawableTop="@mipmap/about_app_qr_code"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/gray"
+                android:text="扫一扫  了解更多资讯"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

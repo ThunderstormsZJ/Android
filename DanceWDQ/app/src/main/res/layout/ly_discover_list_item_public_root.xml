@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="30dp"
+              android:weightSum="3">
+
+    <cn.spinsoft.wdq.widget.EquallyWidthLabel
+        android:id="@+id/discover_list_item_forward"
+        style="@style/EquallyWidthLabelStyle"
+        android:drawableLeft="@mipmap/ic_video_forward"
+        android:text="forward"
+        android:textSize="@dimen/text_size_22" />
+
+    <TextView style="@style/ShortVerticalDividerLineStyle" />
+
+    <cn.spinsoft.wdq.widget.EquallyWidthLabel
+        android:id="@+id/discover_list_item_comment"
+        style="@style/EquallyWidthLabelStyle"
+        android:drawableLeft="@mipmap/ic_video_comment"
+        android:text="comment"
+        android:textSize="@dimen/text_size_22" />
+
+    <TextView style="@style/ShortVerticalDividerLineStyle" />
+
+    <cn.spinsoft.wdq.widget.EquallyWidthLabel
+        android:id="@+id/discover_list_item_like"
+        style="@style/EquallyWidthLabelStyle"
+        android:drawableLeft="@drawable/video_list_item_like_sel"
+        android:text="like"
+        android:textSize="@dimen/text_size_22" />
+</LinearLayout>

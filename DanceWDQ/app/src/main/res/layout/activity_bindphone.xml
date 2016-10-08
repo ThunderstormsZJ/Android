@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/login_register_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/plug_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bindphone_mobile"
+                style="@style/LoginNewEditInputStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/login_phone"
+                android:hint="请输入手机号码"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"/>
+
+            <cn.spinsoft.wdq.widget.VerifyButton
+                android:id="@+id/bindphone_verify_btn"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_btn_round_white_shape"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/verify_btn_textcolor_sel"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <EditText
+            android:id="@+id/bindphone_verify_input"
+            style="@style/LoginNewEditInputStyle"
+            android:drawableLeft="@mipmap/login_password"
+            android:hint="请输入验证码"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <Button
+            android:id="@+id/bindphone_dologin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_btn_purple_gray_sel"
+            android:text="登 录"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_38"
+            />
+
+        <TextView
+            android:id="@+id/bindphone_pswtip"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="初始密码为"
+            android:textSize="@dimen/text_size_36"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

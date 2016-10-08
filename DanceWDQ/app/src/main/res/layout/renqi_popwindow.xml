@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DEDEDE"
+    android:orientation="vertical">
+
+    <Button
+        android:textSize="14sp"
+        android:id="@+id/bt_fujin_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="默认" />
+
+    <Button
+        android:textSize="14sp"
+        android:id="@+id/bt_fujin_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="从高到低" />
+
+    <Button
+        android:textSize="14sp"
+        android:id="@+id/bt_fujin_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="从低到高" />
+
+
+</LinearLayout>
+

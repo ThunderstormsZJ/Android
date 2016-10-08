@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/mine_org_material"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="资料完善"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/mine_org_booking"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="预约订单"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/mine_org_invite"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="邀请老师入驻"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/mine_org_attest"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="待认证老师"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+</LinearLayout>

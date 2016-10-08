@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@id/mine_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            style="@style/PageTitleNameBlackStyle"
+            android:text="个人信息" />
+
+        &lt;!&ndash;<TextView&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/mine_info_confirm"&ndash;&gt;
+            &lt;!&ndash;style="@style/PageTitleTextActionStyle"&ndash;&gt;
+            &lt;!&ndash;android:text="提交"&ndash;&gt;
+            &lt;!&ndash;android:textColor="@color/page_title_text_color" />&ndash;&gt;
+
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="14dp">
+
+        <LinearLayout
+            android:id="@id/mine_info_head_line"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@id/mine_info_photo"
+                style="@style/FrescoCircleHeadStyle"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/mine_info_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/school_more" />
+
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/mine_info_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="NickName"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个性签名"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_signature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="Signature"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_tall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="180cm"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄段"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="80后"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_sex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="女"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxLength="10"
+                android:text="联系方式"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="PhoneNumber"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舞种"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_dance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="爵士舞"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否对其他舞友可见"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/mine_info_visible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="是"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

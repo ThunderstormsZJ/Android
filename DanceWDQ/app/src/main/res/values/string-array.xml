@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="videos_main_dance_sort">
+        <item>日榜</item>
+        <item>月榜</item>
+        <item>季榜</item>
+        <item>年榜</item>
+        <item>总榜</item>
+        <item>打赏日榜</item>
+        <item>打赏月榜</item>
+        <item>打赏季榜</item>
+        <item>年度打赏榜</item>
+    </string-array>
+
+    <string-array name="tuan_names">
+        <item>简介</item>
+        <item>作品</item>
+        <item>课程</item>
+        <item>动态</item>
+        <item>教师</item>
+    </string-array>
+
+    <string-array name="yueyue_names">
+        <item>全部</item>
+        <item>已确认</item>
+        <item>待确认</item>
+        <item>已拒绝</item>
+    </string-array>
+
+</resources>

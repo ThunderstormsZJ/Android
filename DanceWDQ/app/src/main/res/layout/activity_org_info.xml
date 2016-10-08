@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@+id/org_info_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            style="@style/PageTitleNameBlackStyle"
+            android:text="单位信息" />
+
+        <TextView
+            android:id="@+id/org_info_confirm"
+            style="@style/PageTitleTextActionStyle"
+            android:text="提交"
+            android:textColor="@color/page_title_text_color" />
+
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="14dp">
+
+        <LinearLayout
+            android:id="@+id/org_info_head_line"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/org_info_logo"
+                style="@style/FrescoCircleHeadStyle"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/org_info_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/school_more" />
+
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机构名称"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/org_info_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="OrgName"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舞种"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/org_info_dances"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="Dance Types"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingRight="14dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="适合学员"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="@dimen/text_size_28" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/org_info_fit"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:drawableRight="@mipmap/school_more"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:text="Everybody"-->
+                <!--android:textColor="#999999"-->
+                <!--android:textSize="@dimen/text_size_28" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView style="@style/HorizontalDividerLineStyle" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/org_info_contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="13012345678"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机构地址"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/org_info_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="address"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxLength="10"
+                android:text="机构简介"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/org_info_desc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="Please write"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+        <TextView style="@style/HorizontalDividerLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附件"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/org_info_attachment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="right|center_vertical"
+                android:text="机构附件"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_28" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

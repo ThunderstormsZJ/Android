@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/multi_choice_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/dia_bottom_bg"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/multi_choice_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dia_bottom_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="@dimen/text_size_36" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@id/mine_attest"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="教师认证"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@id/mine_booking"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@mipmap/school_more"
+        android:gravity="center_vertical"
+        android:text="我的预约"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+</LinearLayout>

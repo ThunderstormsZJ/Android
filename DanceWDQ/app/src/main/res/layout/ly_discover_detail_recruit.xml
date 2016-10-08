@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/discover_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_32"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10-15K"
+            android:textColor="@color/colorTextOrange"
+            android:textSize="@dimen/text_size_30"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/discover_detail_updatetime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2016-1-1更新"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="city"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_30"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        />
+
+    <RelativeLayout
+        android:id="@+id/discover_detail_orgcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/discover_detail_orghead"
+            style="@style/FrescoOrgLogoStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/discover_detail_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NickName"
+            android:textSize="@dimen/text_size_32"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/discover_detail_orghead"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_dancetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DanceType"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="#666"
+            android:layout_toRightOf="@id/discover_detail_orghead"
+            android:layout_below="@id/discover_detail_nickname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/school_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="3dp"
+            android:background="@color/ff632ad2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="岗位职责"
+            android:textColor="#666"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_24"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discover_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_28"
+        android:textColor="@color/black"
+        android:text="content"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="3dp"
+            android:background="@color/ff632ad2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作地点"
+            android:textColor="#666"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_24"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discover_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_28"
+        android:textColor="@color/black"
+        android:text="address"
+        android:padding="10dp"
+        />
+</LinearLayout>

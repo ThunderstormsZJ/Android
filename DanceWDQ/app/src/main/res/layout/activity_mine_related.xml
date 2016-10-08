@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@+id/mine_related_back"
+            style="@style/PageTitleBackBlackStyle"
+            android:text=""/>
+
+        <TextView
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="与我相关" />
+
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/mine_related_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/PageTitleRootStyle_Purple">-->
+
+        <!--<TextView-->
+            <!--android:id="@id/videos_back"-->
+            <!--style="@style/PageTitleBackWhiteStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/PageTitleNameWhiteStyle"-->
+            <!--android:text="@string/videos_title" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@id/videos_photo"-->
+            <!--style="@style/PageTitleImgActionStyle"-->
+            <!--android:src="@mipmap/ic_video_photo" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@id/videos_search"-->
+            <!--style="@style/PageTitleImgActionStyle"-->
+            <!--android:layout_alignParentRight="false"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_toLeftOf="@id/videos_photo"-->
+            <!--android:src="@mipmap/ic_video_search" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_label_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <!--<cn.spinsoft.wdq.widget.Spinner
+            android:id="@+id/videos_main_type"
+            style="@style/PageFilterSpinnerStyle"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="全部舞种"/>-->
+
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/videos_main_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="全部舞种"
+            />
+
+        <!--<TextView style="@style/VerticalDividerLineStyle" />-->
+
+        <CheckBox
+            android:id="@+id/videos_main_attention"
+            style="@style/EquallyWidthLabelStyle"
+            android:button="@null"
+            android:text="@string/videos_main_attention"
+            android:drawableRight="@drawable/bar_choose_filter_attention_sel"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:checked="false"/>
+
+        <!--<TextView style="@style/VerticalDividerLineStyle" />-->
+
+       <!-- <cn.spinsoft.wdq.widget.Spinner
+            android:id="@id/videos_main_sort"
+            style="@style/PageFilterSpinnerStyle"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="综合排序"/>-->
+
+        <cn.spinsoft.wdq.widget.DropDownSpinner
+            android:id="@+id/videos_main_sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            Text="综合排序"
+            />
+    </LinearLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@id/videos_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_vertical_space">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingTop="5px" />-->
+</LinearLayout>

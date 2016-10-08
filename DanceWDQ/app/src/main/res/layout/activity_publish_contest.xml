@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/ActivityLayoutRootStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <!--    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+            <TextView
+                android:id="@id/publish_back"
+                style="@style/PageTitleBackBlackStyle"
+                android:drawableLeft="@mipmap/ic_back_white"
+                android:text=""/>
+
+            <TextView
+                android:id="@id/publish_type_name"
+                style="@style/PageTitleNameBlackStyle"
+                android:text="活动"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@id/publish_send"
+                style="@style/PageTitleTextActionStyle"
+                android:text="发表"
+                android:textColor="@color/white"/>
+        </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:shrinkColumns="1"
+            android:stretchColumns="1">
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="标\t\t\t题"/>
+
+                <EditText
+                    android:id="@id/publish_title"
+                    style="@style/InputLineContentStyle"
+                    android:hint="请填写标题"
+                    android:imeOptions="actionNext"
+                    android:maxLength="15"
+                    android:singleLine="true"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="海\t\t\t报"/>
+
+                <RelativeLayout
+                    android:id="@+id/publish_pos_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/publish_pos"
+                        style="@style/InputLineContentStyle"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/publish_choose_pos"
+                        android:gravity="right|center_vertical"
+                        android:hint="建议尺寸：750*360"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/publish_pos_choosed"
+                            android:layout_width="125dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:src="@mipmap/publish_choose_pos"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/publish_pos_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:padding="3dp"
+                            android:src="@mipmap/ic_delete_item_simple"
+                            android:visibility="gone"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="报名截止时间"/>
+
+                <TextView
+                    android:id="@+id/publish_time_appstart"
+                    style="@style/InputLineContentWithMoreStyle"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="比赛开始时间"/>
+
+                <TextView
+                    android:id="@id/publish_time_start"
+                    style="@style/InputLineContentWithMoreStyle"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"
+                    android:imeOptions="actionNext"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="比赛结束时间"/>
+
+                <TextView
+                    android:id="@id/publish_time_end"
+                    style="@style/InputLineContentWithMoreStyle"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"
+                    android:imeOptions="actionNext"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="主办单位"/>
+
+                <EditText
+                    android:id="@id/publish_organization"
+                    style="@style/InputLineContentStyle"
+                    android:hint="请填写机构名称"
+                    android:imeOptions="actionNext"
+                    android:maxLength="15"
+                    android:singleLine="true"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="舞\t\t\t种"/>
+
+                <TextView
+                    android:id="@+id/publish_dances"
+                    style="@style/InputLineContentWithMoreStyle"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"
+                    android:imeOptions="actionNext"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/publish_where_name"
+                    style="@style/InputLineNameStyle"
+                    android:text="比赛地址"/>
+
+              <!--  <EditText
+                    android:id="@id/publish_address"
+                    style="@style/InputLineContentStyle"
+                    android:ellipsize="start"
+                    android:hint="请填写地址"
+                    android:imeOptions="actionNext"
+                    android:maxLength="30"
+                    android:maxLines="2"/>-->
+                <TextView
+                    android:id="@id/publish_address"
+                    style="@style/InputLineContentWithMoreStyle"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/publish_desc_name"
+                    style="@style/InputLineNameStyle"
+                    android:text="比赛介绍"/>
+
+                <EditText
+                    android:id="@id/publish_desc"
+                    style="@style/InputLineContentStyle"
+                    android:ellipsize="start"
+                    android:hint="请填写简介"
+                    android:imeOptions="actionNone"
+                    android:maxLength="120"
+                    android:maxLines="6"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@id/publish_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_column="0"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TextView style="@style/HorizontalDividerLineStyle"/>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/InputLineNameStyle"
+                    android:text="宣传视频"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/publish_video"
+                        style="@style/InputLineContentStyle"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/publish_choose_video"
+                        android:gravity="right|center_vertical"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/publish_video_choosed"
+                            android:layout_width="173dp"
+                            android:layout_height="92dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:src="@mipmap/publish_choose_pos"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/publish_video_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:padding="3dp"
+                            android:src="@mipmap/ic_delete_item_simple"
+                            android:visibility="gone"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/plug_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <TextView
+            style="@style/SignTitleStyle"
+            android:text="姓名"
+            />
+        <TextView
+            style="@style/SignTitleStyle"
+            android:layout_weight="3"
+            android:text="手机号码"
+            />
+        <TextView
+            style="@style/SignTitleStyle"
+            android:text="人数"
+            />
+        <TextView
+            style="@style/SignTitleStyle"
+            android:text="备注"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/singn_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

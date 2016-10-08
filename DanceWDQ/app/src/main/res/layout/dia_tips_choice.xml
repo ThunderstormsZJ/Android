@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="270dp"
+              android:layout_height="350dp"
+              android:layout_gravity="center"
+              android:background="@drawable/dia_reward_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dia_reward_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:background="@mipmap/reward_head_bg_red"
+        android:gravity="center"
+        android:text="打赏NickName"
+        android:textColor="@color/ffffff"
+        android:textSize="@dimen/text_size_28"
+        />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dia_reward_border_bg">
+
+        <TextView
+            android:id="@+id/tips_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:text="￥ 1.00"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_36"/>
+
+        <TextView style="@style/VerticalDividerLineStyle"/>
+
+        <ImageButton
+            android:id="@+id/tips_dice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/reward_dice"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="选择支付方式"
+        android:textColor="#98096f"
+        android:textSize="@dimen/text_size_30"/>
+
+    <RadioGroup
+        android:id="@+id/dia_reward_way_rg"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dia_reward_way_dice"
+            style="@style/RewardWayItemStyle"
+            android:checked="true"
+            android:drawableLeft="@mipmap/reward_way_change"
+            android:drawableRight="@drawable/dia_reward_way_choose"
+            android:text="零钱(剩余0)"
+            />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            />
+
+        <RadioButton
+            android:id="@+id/dia_reward_way_wx"
+            style="@style/RewardWayItemStyle"
+            android:checked="false"
+            android:drawableLeft="@mipmap/reward_way_wx"
+            android:drawableRight="@drawable/dia_reward_way_choose"
+            android:text="微信支付"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/tips_confirm"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/login_register_btn_bg"
+        android:text="打赏"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_36"/>
+
+</LinearLayout>

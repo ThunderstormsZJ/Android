@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            style="@style/DiscoverTableRowTextStyle"
+            android:text="开始时间:"/>
+
+        <TextView
+            android:id="@+id/discover_detail_timeStart"
+            android:text="开始时间"
+            style="@style/DiscoverTableRowTextConentStyle"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="4dp">
+
+        <TextView
+            android:text="结束时间:"
+            style="@style/DiscoverTableRowTextStyle"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_timeEnd"
+            android:text="结束时间"
+            style="@style/DiscoverTableRowTextConentStyle"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="4dp">
+
+        <TextView
+            android:text="活动地点:"
+            style="@style/DiscoverTableRowTextStyle"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_address"
+            android:text="活动地点"
+            style="@style/DiscoverTableRowTextConentStyle"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="4dp">
+
+        <TextView
+            android:text="舞&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;种:"
+            style="@style/DiscoverTableRowTextStyle"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_dance"
+            android:text="舞种"
+            style="@style/DiscoverTableRowTextConentStyle"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="4dp">
+
+        <TextView
+            android:text="主办单位:"
+            style="@style/DiscoverTableRowTextStyle"
+            />
+
+        <TextView
+            android:id="@+id/discover_detail_orgName"
+            android:text="主办单位"
+            style="@style/DiscoverTableRowTextConentStyle"
+            />
+    </TableRow>
+
+</TableLayout>

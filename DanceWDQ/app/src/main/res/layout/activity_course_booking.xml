@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@+id/course_booking_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            style="@style/PageTitleNameBlackStyle"
+            android:ellipsize="middle"
+            android:maxLength="10"
+            android:text="登记预约" />
+    </RelativeLayout>-->
+
+    <include layout="@layout/plug_base_title"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/f2f3f4"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:shrinkColumns="2"
+        android:stretchColumns="2">
+
+        <TableRow android:background="@drawable/course_book_line_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="姓    名"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                style="@style/VerticalDividerLineStyle"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/course_booking_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_24" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@drawable/course_book_line_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="时    间"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                style="@style/VerticalDividerLineStyle"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/course_booking_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center_vertical|left"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_24" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@drawable/course_book_line_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="手机号"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                style="@style/VerticalDividerLineStyle"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/course_booking_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_24" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@drawable/course_book_line_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="验证码"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                style="@style/VerticalDividerLineStyle"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/course_booking_verify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|left"
+                android:imeOptions="actionDone"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_24" />
+
+            <cn.spinsoft.wdq.widget.VerifyButton
+                android:id="@+id/course_booking_get_verify"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_btn_round_white_shape"
+                android:textColor="@color/verify_btn_textcolor_sel"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/course_booking_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/login_register_btn_bg"
+        android:text="预约"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_34" />
+
+</LinearLayout>

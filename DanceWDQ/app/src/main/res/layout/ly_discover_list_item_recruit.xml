@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/discover_recruit_head"
+        style="@style/FrescoCircleHeadStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/discover_recruit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/text_size_32"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/discover_recruit_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="#666"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:text="desc"
+            android:layout_below="@id/discover_recruit_title"
+            />
+
+        <TextView
+            android:id="@+id/discover_recruit_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/discover_recruit_title"
+            android:text="10-15K"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/colorTextOrange"
+            />
+
+        <ImageView
+            android:id="@+id/discover_recruit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_delete_item_simple"/>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

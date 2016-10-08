@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+   <!-- <RelativeLayout
+        android:id="@id/login_top_title"
+        style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@id/login_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            android:id="@id/login_top_title_name"
+            style="@style/PageTitleNameBlackStyle"
+            android:text="@string/login_login_str" />
+
+        <TextView
+            android:id="@id/login_register"
+            style="@style/PageTitleTextActionStyle"
+            android:text="@string/action_register"
+            android:textColor="@color/colorTextOrange" />
+    </RelativeLayout>-->
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <FrameLayout
+        android:id="@id/login_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_top_title" />
+</LinearLayout>

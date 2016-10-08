@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/video_detail_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@id/video_detail_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/video_detail_photo"
+            android:text="NickName"
+            android:textColor="#937be5"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/videos_detail_timeDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_detail_nickName"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/video_detail_photo"
+            android:text="time"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_24"/>
+
+        <Button
+            android:id="@id/video_detail_attention"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/video_detail_attention_sel"/>
+    </RelativeLayout>
+
+<!--    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <include layout="@layout/giraffe_player"/>
+        &lt;!&ndash;<include
+            layout="@layout/giraffe_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>&ndash;&gt;
+&lt;!&ndash;        <com.tencent.qcload.playersdk.ui.VideoRootFrame
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.tencent.qcload.playersdk.ui.VideoRootFrame>&ndash;&gt;
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/video_detail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/FrescoVideoPosterStyle"/>
+
+        <ImageView
+            android:id="@id/video_detail_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_play_big"/>
+
+    </FrameLayout>-->
+</LinearLayout>

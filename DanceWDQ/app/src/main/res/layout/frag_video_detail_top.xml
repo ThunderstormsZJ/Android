@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/video_detail_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@id/video_detail_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/video_detail_photo"
+            android:text="NickName"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/videos_detail_timeDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/video_detail_photo"
+            android:layout_below="@id/video_detail_nickName"
+            android:text="time"
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_24" />
+
+        <Button
+            android:id="@id/video_detail_attention"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/video_detail_attention_sel" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="209dp">
+
+        <com.android.tedcoder.wkvideoplayer.view.SuperVideoPlayer
+            android:id="@id/video_detail_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/video_detail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@id/video_detail_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_play_big" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/video_detail_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_video_original"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@id/video_detail_dance_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_video_label"
+            android:drawablePadding="@dimen/text_drawable_padding_narrow"
+            android:layout_below="@id/video_detail_original"
+            android:layout_marginTop="4dp"
+            android:text="label"
+            android:textColor="#b7b7b7"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@id/video_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/video_detail_original"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:text="title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@id/video_detail_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_watch_count"
+            android:layout_below="@id/video_detail_title"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+            android:text="12345次播放"
+            android:textColor="#b7b7b7"
+            android:textSize="@dimen/text_size_24" />
+    </RelativeLayout>
+</LinearLayout>

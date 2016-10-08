@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout style="@style/PageTitleRootStyle_White">
+
+        <TextView
+            android:id="@id/user_title_back"
+            style="@style/PageTitleBackBlackStyle" />
+
+        <TextView
+            android:id="@id/user_title_name"
+            style="@style/PageTitleNameBlackStyle"
+            android:text="NickName" />
+    </RelativeLayout>-->
+    <include layout="@layout/plug_base_title"/>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:padding="15dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/user_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@id/user_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_photo"
+            android:text="NickName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_44" />
+
+        <TextView
+            android:id="@id/user_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user_photo"
+            android:layout_toRightOf="@id/user_photo"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="signature"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_size_22" />
+
+        <Button
+            android:id="@id/user_attention"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/friend_add" />
+
+        <TextView
+            android:id="@id/user_attest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="attest"
+            android:textColor="#632ad2"
+            android:textSize="@dimen/text_size_24" />
+
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white">
+
+        <cn.spinsoft.wdq.widget.RadioGroup
+            android:id="@id/user_page_labels"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@id/user_label_works"
+                style="@style/PageLabelRadioButtonStyle"
+                android:checked="true"
+                android:text="作品"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@id/user_label_dynamic"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="动态"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@id/user_label_attention"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="关注"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+            <TextView style="@style/VerticalDividerLineStyle" />
+
+            <TextView
+                android:id="@id/user_label_fans"
+                style="@style/PageLabelRadioButtonStyle"
+                android:text="粉丝"
+                android:textColor="@color/label_type_textcolor_sel" />
+
+        </cn.spinsoft.wdq.widget.RadioGroup>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@id/user_label_slider"
+            android:layout_width="89dp"
+            android:layout_height="@dimen/page_label_slider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorSlideLinePurple" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/user_label_count"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="1234"
+        android:textColor="#898989"
+        android:textSize="@dimen/text_size_22" />
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <FrameLayout
+        android:id="@id/user_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorBackgroundGray" />
+</LinearLayout>

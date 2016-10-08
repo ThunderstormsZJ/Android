@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="f2f3f4">#f2f3f4</color>
+    <color name="f3f3f3">#f3f3f3</color>
+    <color name="f7f7f7">#f7f7f7</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="f9f9f9">#f9f9f9</color>
+    <color name="dcddde">#dcddde</color>
+    <color name="c9cacb">#c9cacb</color>
+    <color name="cccccc">#cccccc</color>
+    <color name="e0cccccc">#e0cccccc</color>
+    <color name="c6c6c6">#c6c6c6</color>
+    <color name="c2c2c2">#c2c2c2</color>
+    <color name="b7b8b9">#b7b8b9</color>
+    <color name="ff999999">#999999</color>
+    <color name="ff898989">#898989</color>
+    <color name="ff333435">#333435</color>
+    <color name="ff2b2b2b">#2b2b2b</color>
+    <color name="ff9900">#ff9900</color>
+    <color name="ff632ad2">#ff00b6</color>
+    <color name="e0632ad2">#e0ff00b6</color>
+
+
+    <color name="colorTitlePurple">@color/ff632ad2</color>
+    <color name="colorTitlePurpleNew">#ff00b6</color>
+    <color name="colorTitleWhite">@color/f2f3f4</color>
+    <color name="colorBackgroundGray">@color/dcddde</color>
+    <color name="colorTextOrange">@color/ff9900</color>
+    <color name="colorSlideLinePurple">#eb03a9</color>
+    <color name="colorTextBlue">#3399ff</color>
+    <color name="colorTextGray">@color/cccccc</color>
+    <color name="colorVideoInfoText">#929292</color>
+    <color name="colorVideoTitleBackGround">#7f000000</color>
+    <color name="colorTextGrayDarker">@color/ff333435</color>
+    <color name="barTextColor">#333333</color>
+    <color name="barTitleBackGround">@color/f9f9f9</color>
+    <color name="colorTextGreen">#77ae21</color>
+    <color name="slideUnderLine">#eb03a9</color>
+
+    <color name="bg_tab_pressed">#6633b5e5</color>
+    <color name="bg_btn_orange">@color/ff9900</color>
+    <color name="bg_page_whole_gray">@color/dcddde</color>
+    <color name="bg_page_title_purple">@color/ff632ad2</color>
+    <color name="bg_page_title_transparent_purple">@color/e0632ad2</color>
+    <color name="bg_page_title_white">@color/f2f3f4</color>
+    <color name="divider_gray">@color/b7b8b9</color>
+    <color name="short_vertival_line">#cdcdcd</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="text_purple">#632ad2</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="app_background_color">#e9edf0</color>
+
+</resources>

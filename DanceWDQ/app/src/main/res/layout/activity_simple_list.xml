@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@+id/simple_list_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            android:id="@+id/simple_list_title"
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="教师认证" />
+
+        <TextView
+            android:id="@+id/simple_list_confirm"
+            style="@style/PageTitleTextActionStyle"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <cn.spinsoft.wdq.widget.SearchBar
+        android:id="@+id/simple_list_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:hint="输入名字搜索" />
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/simple_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:background="#e9edf0"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@+id/mine_wallet_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="我的余额" />
+
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mine_wallet_balance_ll"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wallet_gold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="余额(元)"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/mine_wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.00"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_44" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mine_wallet_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_wallet_balance_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@mipmap/wallet_withdraw" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额明细"
+            android:textColor="@color/ff999999"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/mine_wallet_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <com.jingchen.pulltorefresh.PullableRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

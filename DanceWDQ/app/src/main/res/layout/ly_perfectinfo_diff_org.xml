@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/perfect_info_org_nickname"
+        style="@style/PerfetInfoEditStyle_Write_bg"
+        android:layout_marginTop="20dp"
+        android:hint="机构名称"
+        />
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/perfect_info_org_phone"
+        style="@style/PerfetInfoEditStyle_Write_bg"
+        android:hint="机构电话"
+        android:inputType="phone"
+        />
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省、市、区"
+            />
+
+        <TextView
+            android:id="@+id/perfect_info_org_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:drawablePadding="10dp"
+            android:text="省市区"
+            android:drawableRight="@mipmap/school_more"
+            android:textSize="@dimen/text_size_30"
+            android:singleLine="true"
+            android:maxLength="20"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HorizontalDividerLineStyle"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/perfect_info_org_detailaddress"
+        style="@style/PerfetInfoEditStyle_Write_bg"
+        android:hint="详细地址"
+        android:singleLine="false"
+        android:lines="3"
+        android:gravity="top|left"
+        android:maxLength="60"
+        />
+</LinearLayout>

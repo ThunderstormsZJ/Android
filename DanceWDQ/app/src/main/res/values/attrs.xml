@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Spinner">
+        <attr name="drawable_right" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothTabHost">
+        <attr name="slide_color" format="color|reference"></attr>
+        <attr name="slide_height" format="dimension|reference"></attr>
+        <attr name="need_divider" format="boolean|reference"></attr>
+        <attr name="divider_color" format="color|reference"></attr>
+        <attr name="divider_width" format="dimension|reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumRadioButton">
+        <attr name="num_testSize" format="dimension|reference"></attr>
+        <attr name="num_textColor" format="color|reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RecycleWheelView">
+        <attr name="recycleWheelDirection" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="recycleWheelLineColor" format="color" />
+        <attr name="recycleWheelLineThickness" format="dimension" />
+        <attr name="recycleWheelLineDrawable" format="reference" />
+        <attr name="recycleWheelLinePadding" format="dimension" />
+    </declare-styleable>
+</resources>

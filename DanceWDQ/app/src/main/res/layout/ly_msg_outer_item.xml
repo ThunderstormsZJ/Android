@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/msg_outer_bg_blue"
+    android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/msg_outer_item_photo"
+        style="@style/FrescoCircleHeadStyle"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/msg_outer_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/msg_outer_item_photo"
+        android:layout_toRightOf="@id/msg_outer_item_photo"
+        android:text="NickName"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msg_outer_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/msg_outer_item_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/msg_outer_item_name"
+        android:text="time"
+        android:textColor="@color/ff898989"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        android:id="@+id/msg_outer_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:background="@drawable/red_point_bg"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_22" />
+
+    <TextView
+        android:id="@+id/msg_outer_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/msg_outer_item_photo"
+        android:layout_toRightOf="@id/msg_outer_item_photo"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="content"
+        android:textColor="@color/ff898989"
+        android:textSize="@dimen/text_size_24" />
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLayoutRootStyle"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/PageTitleRootStyle_Purple">
+
+        <TextView
+            android:id="@id/setting_back"
+            style="@style/PageTitleBackWhiteStyle" />
+
+        <TextView
+            style="@style/PageTitleNameWhiteStyle"
+            android:text="设置" />
+
+        <!--<ImageView
+            android:id="@id/setting_more"
+            style="@style/PageTitleImgActionStyle"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/mine_more" />-->
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/setting_material"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="个人资料"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@id/setting_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="修改登陆密码"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+        <!--<TextView
+            android:id="@id/setting_message"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="消息"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />-->
+<!--
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />-->
+
+        <RelativeLayout
+            android:id="@id/setting_cache_line"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@id/setting_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/text_drawable_padding_narrow"
+                android:drawableRight="@mipmap/school_more"
+                android:gravity="center_vertical"
+                android:text="0K"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/text_size_28" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/HorizontalDividerLineStyle"
+            android:layout_marginLeft="14dp" />
+
+     <!--   <TextView
+            android:id="@id/setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+      <!--  <TextView
+            android:id="@id/setting_service"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/school_more"
+            android:gravity="center_vertical"
+            android:text="服务中心"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28" />-->
+
+        <!--<TextView-->
+            <!--style="@style/HorizontalDividerLineStyle"-->
+            <!--android:layout_marginLeft="14dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@id/setting_about"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:drawableRight="@mipmap/school_more"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="关于舞蹈圈"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/text_size_28" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/setting_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="退出登录"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_28" />
+</LinearLayout>

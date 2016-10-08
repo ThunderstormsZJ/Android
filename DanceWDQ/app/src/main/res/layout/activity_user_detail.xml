@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/ActivityLayoutRootStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:background="@mipmap/ic_userdetail_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_detail_back"
+                style="@style/PageTitleBackWhiteStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人主页"
+                android:textColor="#e0cccccc"
+                android:textSize="@dimen/text_size_36"
+                />
+            <ImageView
+                android:id="@+id/user_private_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_private_msg_v2"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+           <!-- <TextView
+                android:id="@+id/user_private_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/icon_private_msg_v2"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="聊一下呗~"
+                android:textColor="#FFFF00"
+                android:textSize="@dimen/text_size_24"
+                />-->
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/user_photo"
+            style="@style/FrescoCircleHeadStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/user_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="NickName"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_34"/>
+
+            <ImageView
+                android:id="@+id/user_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/user_nickName"
+                android:src="@mipmap/user_gender_man"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@id/user_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:text="signature"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_22"/>
+
+            <ImageButton
+                android:id="@+id/user_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_signature"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:padding="7dp"
+                android:src="@drawable/bg_userdetail_attention_sel"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#7f000000">
+
+                <cn.spinsoft.wdq.widget.RadioGroup
+                    android:id="@id/user_page_labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@id/user_label_works"
+                        style="@style/PageLabelRadioButtonStyle"
+                        android:checked="true"
+                        android:text="作品"
+                        android:textColor="@color/color_userdetail_rg_sel"/>
+
+                    <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+                    <TextView
+                        android:id="@id/user_label_dynamic"
+                        style="@style/PageLabelRadioButtonStyle"
+                        android:text="动态"
+                        android:textColor="@color/color_userdetail_rg_sel"/>
+
+                    <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+                    <TextView
+                        android:id="@id/user_label_attention"
+                        style="@style/PageLabelRadioButtonStyle"
+                        android:text="关注"
+                        android:textColor="@color/color_userdetail_rg_sel"/>
+
+                    <TextView style="@style/ShortVerticalDividerLineStyle"/>
+
+                    <TextView
+                        android:id="@id/user_label_fans"
+                        style="@style/PageLabelRadioButtonStyle"
+                        android:text="粉丝"
+                        android:textColor="@color/color_userdetail_rg_sel"/>
+
+                </cn.spinsoft.wdq.widget.RadioGroup>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/user_label_works_num"
+                            style="@style/OrgDetailSlideStyle"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/user_label_dynamic_num"
+                            style="@style/OrgDetailSlideStyle"/>
+
+                        <TextView
+                            android:id="@+id/user_label_attention_num"
+                            style="@style/OrgDetailSlideStyle"/>
+
+                        <TextView
+                            android:id="@+id/user_label_fans_num"
+                            style="@style/OrgDetailSlideStyle"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@id/user_label_slider"
+                    android:layout_width="89dp"
+                    android:layout_height="@dimen/page_label_slider_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorSlideLinePurple"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@id/user_label_count"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="1234"
+            android:textColor="#898989"
+            android:textSize="@dimen/text_size_22"/>
+
+        <TextView
+            android:id="@+id/user_label_diff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:textColor="#898989"
+            android:textSize="@dimen/text_size_22"
+            android:text="舞票"
+            />
+    </RelativeLayout>
+
+    <TextView style="@style/HorizontalDividerLineStyle"/>
+
+    <FrameLayout
+        android:id="@id/user_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundGray"/>
+</LinearLayout>

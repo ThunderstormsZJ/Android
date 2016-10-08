@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_fujin_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="不限"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_fujin_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="国标"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_fujin_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="芭蕾"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/bt_fujin_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="拉丁舞"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_fujin_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="街舞"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_fujin_6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:text="现代舞"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+

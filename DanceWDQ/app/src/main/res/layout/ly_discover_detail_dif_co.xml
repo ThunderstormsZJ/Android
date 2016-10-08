@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:shrinkColumns="1"
+             android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主办单位："
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/discover_detail_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="主办单位"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动地点："
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/discover_detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="活动地点"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舞&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;种："
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/discover_detail_dancetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="舞种"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间："
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/discover_detail_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="开始时间"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间："
+            android:textColor="#666"
+            android:textSize="@dimen/text_size_28"/>
+
+        <TextView
+            android:id="@+id/discover_detail_infoendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="结束时间"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_28"/>
+    </TableRow>
+
+
+</TableLayout>
